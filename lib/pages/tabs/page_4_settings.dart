@@ -75,7 +75,7 @@ class _SettingsState extends State<Settings>
       child: Text(
         text,
         textAlign: TextAlign.start,
-        style: Theme.of(context).textTheme.subtitle1,
+        style: Theme.of(context).textTheme.titleMedium,
         textScaleFactor: 1,
       ),
     );
@@ -89,7 +89,7 @@ class _SettingsState extends State<Settings>
       child: Text(
         text,
         textAlign: TextAlign.start,
-        style: Theme.of(context).textTheme.bodyText1?.copyWith(
+        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
               height: 1,
               fontSize: 12,
               fontWeight: FontWeight.bold,
@@ -108,7 +108,7 @@ class _SettingsState extends State<Settings>
           AdaptiveIcon(icon),
           Text(
             text,
-            style: Theme.of(context).textTheme.bodyText1?.copyWith(
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   height: 1,
                   fontSize: 12,
                 ),
@@ -561,7 +561,7 @@ class _SettingsState extends State<Settings>
                                                       'حفظ',
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyLarge!
                                                           .copyWith(
                                                               fontWeight:
                                                                   FontWeight
@@ -620,7 +620,7 @@ class _SettingsState extends State<Settings>
                                                       'إلغاء',
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyLarge!
                                                           .copyWith(
                                                               fontWeight:
                                                                   FontWeight
@@ -653,7 +653,7 @@ class _SettingsState extends State<Settings>
                                                     dateTimePickerTextStyle:
                                                         Theme.of(context)
                                                             .textTheme
-                                                            .bodyText1,
+                                                            .bodyLarge,
                                                   ),
                                                 ),
                                                 child: CupertinoDatePicker(
@@ -694,7 +694,7 @@ class _SettingsState extends State<Settings>
                                     formatTime(morningNotiTime),
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyLarge!
                                         .copyWith(fontSize: 12),
                                   ),
                                 ),
@@ -760,7 +760,7 @@ class _SettingsState extends State<Settings>
                                                       'حفظ',
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyLarge!
                                                           .copyWith(
                                                               fontWeight:
                                                                   FontWeight
@@ -818,7 +818,7 @@ class _SettingsState extends State<Settings>
                                                       'إلغاء',
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyLarge!
                                                           .copyWith(
                                                               fontWeight:
                                                                   FontWeight
@@ -856,7 +856,7 @@ class _SettingsState extends State<Settings>
                                                       fontSize: 16,
                                                       color: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyLarge!
                                                           .color,
                                                     ),
                                                   ),
@@ -898,7 +898,7 @@ class _SettingsState extends State<Settings>
                                     formatTime(nightNotiTime),
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyLarge!
                                         .copyWith(fontSize: 12),
                                   ),
                                 ),
@@ -1064,8 +1064,7 @@ class _SettingsState extends State<Settings>
   }
 
   Widget fontTypeButton(String font) {
-    // ignore: deprecated_member_use
-    return FlatButton(
+    return TextButton(
       onPressed: () => context.read<AppSettings>().fontType = font,
       child: AnimatedDefaultTextStyle(
         style: TextStyle(

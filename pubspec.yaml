@@ -1,9 +1,9 @@
-name: noor
-description: أذكار وأدعية من كتاب حصن المسلم
-version: 2.5.0+25009
+name: AlMuslim
+description: AlMuslim App
+version: 1.0.0+1
 
 environment:
-  sdk: '>=2.15.0 <3.0.0'
+  sdk: '>=3.0.0 <3.2.7'
 
 dependencies:
   animations: ^2.0.2
@@ -18,7 +18,7 @@ dependencies:
     sdk: flutter
   flutter_svg: ^1.0.3
   get_it: ^7.1.3
-  intl: ^0.17.0
+  intl: 0.18.1
   path_provider: ^2.0.6
   provider: ^5.0.0
   reorderables: ^0.4.1

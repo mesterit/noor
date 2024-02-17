@@ -1,4 +1,4 @@
-package com.noor.sa;
+package com.almuslim.app;
 
 import io.flutter.embedding.android.FlutterActivity;
 
