@@ -32,14 +32,15 @@ class _RootHomeState extends State<RootHome>
       precacheImage(AssetImage(images.noAd3yahFav), context);
     });
 
-    AndroidInitializationSettings initializationSettingsAndroid =
-        const AndroidInitializationSettings('ic_notification');
-    IOSInitializationSettings initializationSettingsIOS =
-        const IOSInitializationSettings();
-    InitializationSettings initializationSettings = InitializationSettings(
-        android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
-    flutterLocalNotificationsPlugin.initialize(initializationSettings,
-        onSelectNotification: onSelectNotification);
+    ///Todo fix this
+    // AndroidInitializationSettings initializationSettingsAndroid =
+    //     const AndroidInitializationSettings('ic_notification');
+    // IOSInitializationSettings initializationSettingsIOS =
+    //     const IOSInitializationSettings();
+    // InitializationSettings initializationSettings = InitializationSettings(
+    //     android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
+    // flutterLocalNotificationsPlugin.initialize(initializationSettings,
+    //     onSelectNotification: onSelectNotification);
   }
 
   Future<void> onSelectNotification(String? payload) async {

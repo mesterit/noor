@@ -86,9 +86,9 @@ flutter:
           weight: 500
         - asset: assets/fonts/UthmanTN1B.otf
           weight: 700
-    - family: AlmuslimIcons
+    - family: NoorIcons
       fonts:
-        - asset: assets/fonts/AlmuslimIcons.ttf
-    - family: AlmuslimSettingsIcons
+        - asset: assets/fonts/NoorIcons.ttf
+    - family: NoorSettingsIcons
       fonts:
-        - asset: assets/fonts/AlmuslimSettingsIcons.ttf
+        - asset: assets/fonts/NoorSettingsIcons.ttf
