@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:noor/exports/constants.dart' show Images, viewPadding;
+import 'package:Almuslim/exports/constants.dart' show Images, viewPadding;
 
 class NameTitleCard extends StatelessWidget {
   const NameTitleCard({Key? key, this.title}) : super(key: key);

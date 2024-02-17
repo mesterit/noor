@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:noor/models/allah_name.dart';
-import 'package:noor/models/doaa.dart';
-import 'package:noor/models/thekr.dart';
+import 'package:Almuslim/models/allah_name.dart';
+import 'package:Almuslim/models/doaa.dart';
+import 'package:Almuslim/models/thekr.dart';
 
 class DataModel extends ChangeNotifier {
   List<Thekr> _athkar = <Thekr>[];

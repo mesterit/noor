@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:noor/exports/controllers.dart' show ThemeModel;
+import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
 import 'package:provider/provider.dart';
 
-class NoorLogo extends StatelessWidget {
-  const NoorLogo({Key? key, required this.size}) : super(key: key);
+class AlmuslimLogo extends StatelessWidget {
+  const AlmuslimLogo({Key? key, required this.size}) : super(key: key);
   final double size;
 
   @override

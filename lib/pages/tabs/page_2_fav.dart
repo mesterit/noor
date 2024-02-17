@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:noor/models/data.dart';
+import 'package:Almuslim/models/data.dart';
 import 'package:provider/provider.dart';
 import 'package:reorderables/reorderables.dart';
 
-import 'package:noor/exports/components.dart'
+import 'package:Almuslim/exports/components.dart'
     show CardTemplate, DeleteConfirmationDialog, ImageButton;
-import 'package:noor/exports/models.dart' show AllahName;
-import 'package:noor/exports/constants.dart' show Images, NoorCategory;
-import 'package:noor/exports/pages.dart'
+import 'package:Almuslim/exports/models.dart' show AllahName;
+import 'package:Almuslim/exports/constants.dart' show Images, AlmuslimCategory;
+import 'package:Almuslim/exports/pages.dart'
     show Ad3yahList, AllahNamesList, AthkarList, MyAd3yah;
-import 'package:noor/exports/controllers.dart' show DataController, ThemeModel;
-import 'package:noor/exports/utils.dart' show backToExactLocation;
-import 'package:noor/exports/components.dart' show CardText;
+import 'package:Almuslim/exports/controllers.dart' show DataController, ThemeModel;
+import 'package:Almuslim/exports/utils.dart' show backToExactLocation;
+import 'package:Almuslim/exports/components.dart' show CardText;
 
 class Favorite extends StatefulWidget {
   const Favorite({
@@ -93,21 +93,21 @@ class _FavoriteState extends State<Favorite>
     final int index = tmpList.indexWhere(
         (dynamic element) => element.sectionName == item.sectionName);
     switch (item.category) {
-      case NoorCategory.athkar:
+      case AlmuslimCategory.athkar:
         Navigator.of(context).push(
           MaterialPageRoute<AthkarList>(
             builder: (_) => AthkarList(index: index),
           ),
         );
         break;
-      case NoorCategory.myad3yah:
+      case AlmuslimCategory.myad3yah:
         Navigator.of(context).push(
           MaterialPageRoute<MyAd3yah>(
             builder: (_) => const MyAd3yah(),
           ),
         );
         break;
-      case NoorCategory.allahname:
+      case AlmuslimCategory.allahname:
         Navigator.of(context).push(
           MaterialPageRoute<AllahNamesList>(
             builder: (_) => const AllahNamesList(),
@@ -318,7 +318,7 @@ class FavCard extends StatelessWidget {
           onTap: remove,
         ),
       ],
-      additionalContent: item.category == NoorCategory.myad3yah
+      additionalContent: item.category == AlmuslimCategory.myad3yah
           ? CardText(
               text: item.info,
               color: Theme.of(context).primaryColor,

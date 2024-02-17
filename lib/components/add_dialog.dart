@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:noor/components/dialog_button.dart';
+import 'package:Almuslim/components/dialog_button.dart';
 
 import 'editable_text_max_length_highlighter.dart';
 

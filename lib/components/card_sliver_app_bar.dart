@@ -26,7 +26,7 @@ class CardSliverAppBar extends StatelessWidget {
           ),
         ),
         actions: const [
-          NoorCloseButton(size: 40),
+          AlmuslimCloseButton(size: 40),
         ],
         backgroundColor: Theme.of(context).canvasColor,
         onStretchTrigger: () async {},

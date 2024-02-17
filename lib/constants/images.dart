@@ -1,4 +1,4 @@
-import 'package:noor/env_config.dart';
+import 'package:Almuslim/env_config.dart';
 
 abstract class Images {
   static LightAppImages get light => LightAppImages();

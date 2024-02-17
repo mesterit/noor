@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:noor/components/add_dialog.dart';
-import 'package:noor/components/alert_dialog.dart';
-import 'package:noor/components/delete_dialog.dart';
-import 'package:noor/exports/constants.dart';
-import 'package:noor/exports/controllers.dart';
-import 'package:noor/exports/pages.dart';
-import 'package:noor/pages/tabs/page_3_counter/counter_view_model.dart';
+import 'package:Almuslim/components/add_dialog.dart';
+import 'package:Almuslim/components/alert_dialog.dart';
+import 'package:Almuslim/components/delete_dialog.dart';
+import 'package:Almuslim/exports/constants.dart';
+import 'package:Almuslim/exports/controllers.dart';
+import 'package:Almuslim/exports/pages.dart';
+import 'package:Almuslim/pages/tabs/page_3_counter/counter_view_model.dart';
 import 'package:provider/provider.dart';
-import 'package:noor/utils/to_arabic.dart';
+import 'package:Almuslim/utils/to_arabic.dart';
 
 const kMaxLength = 75;
 
@@ -80,7 +80,7 @@ class _CounterListViewState extends State<CounterListView> {
         counterModel.deleteSubhaItem(item);
       }
     } else if (item.locked) {
-      NoorAlertDialog.of(context).show(
+      AlmuslimAlertDialog.of(context).show(
         title: 'عُــذراً',
         content: 'لا يمكن حذف الأذكار المُقترحة',
       );
@@ -143,12 +143,12 @@ class _CounterListViewState extends State<CounterListView> {
             AnimatedSwitcher(
               duration: const Duration(milliseconds: 200),
               child: isEditMode
-                  ? NoorIconButton(
+                  ? AlmuslimIconButton(
                       key: ValueKey<bool>(isEditMode),
                       icon: context.read<ThemeModel>().images.addMyAd3yah,
                       onPressed: addDialog,
                     )
-                  : NoorIconButton(
+                  : AlmuslimIconButton(
                       key: ValueKey<bool>(isEditMode),
                       icon: Images.editeIcon,
                       onPressed: () {
@@ -165,7 +165,7 @@ class _CounterListViewState extends State<CounterListView> {
                   .headline2!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
-            NoorIconButton(
+            AlmuslimIconButton(
               icon: Icons.close_rounded,
               onPressed: () {
                 if (isEditMode) {
@@ -286,7 +286,7 @@ class SubhaListItem extends StatelessWidget {
                               child: isEditMode
                                   ? item.locked
                                       ? SvgPicture.asset(
-                                          NoorIcons.subhaLock,
+                                          AlmuslimIcons.subhaLock,
                                           width: 40,
                                         )
                                       : Image.asset(

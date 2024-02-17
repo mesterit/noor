@@ -1,6 +1,6 @@
 import 'package:firebase_remote_config/firebase_remote_config.dart';
-import 'package:noor/constants/strings.dart';
-import 'package:noor/services/prefs.dart';
+import 'package:Almuslim/constants/strings.dart';
+import 'package:Almuslim/services/prefs.dart';
 
 class RemoteConfigService {
   final FirebaseRemoteConfig _remoteConfig = FirebaseRemoteConfig.instance;
@@ -20,11 +20,11 @@ class RemoteConfigService {
     );
 
     _remoteConfig.setDefaults(<String, dynamic>{
-      'noorThker': Strings.noorThekrDefault,
+      'AlmuslimThker': Strings.AlmuslimThekrDefault,
     });
   }
 
-  Future<String> fetchNoorRC() async {
+  Future<String> fetchAlmuslimRC() async {
     if (SharedPrefsService.getBool('CONFIG_STATE')) {
       SharedPrefsService.putBool('CONFIG_STATE', false);
 
@@ -37,6 +37,6 @@ class RemoteConfigService {
       }
     }
 
-    return _remoteConfig.getString('noorThker');
+    return _remoteConfig.getString('AlmuslimThker');
   }
 }

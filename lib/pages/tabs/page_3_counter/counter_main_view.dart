@@ -3,12 +3,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
-import 'package:noor/exports/constants.dart';
-import 'package:noor/pages/tabs/page_3_counter/counter_view_model.dart';
-import 'package:noor/pages/tabs/page_3_counter/counter_list_view.dart';
+import 'package:Almuslim/exports/constants.dart';
+import 'package:Almuslim/pages/tabs/page_3_counter/counter_view_model.dart';
+import 'package:Almuslim/pages/tabs/page_3_counter/counter_list_view.dart';
 
-import 'package:noor/exports/utils.dart' show ToArabicNumbers;
-import 'package:noor/exports/controllers.dart' show AppSettings, ThemeModel;
+import 'package:Almuslim/exports/utils.dart' show ToArabicNumbers;
+import 'package:Almuslim/exports/controllers.dart' show AppSettings, ThemeModel;
 
 class CounterView extends StatefulWidget {
   const CounterView({Key? key}) : super(key: key);
@@ -88,12 +88,12 @@ class _CounterViewState extends State<CounterView> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      NoorIconButton(
-                        icon: NoorIcons.subhaList,
+                      AlmuslimIconButton(
+                        icon: AlmuslimIcons.subhaList,
                         onPressed: navigateToCounterList,
                       ),
-                      NoorIconButton(
-                        icon: NoorIcons.subhaReset,
+                      AlmuslimIconButton(
+                        icon: AlmuslimIcons.subhaReset,
                         onPressed: counterModel.resetSelectedItemCounter,
                       )
                     ],
@@ -150,8 +150,8 @@ class _CounterViewState extends State<CounterView> {
   }
 }
 
-class NoorIconButton extends StatelessWidget {
-  const NoorIconButton({
+class AlmuslimIconButton extends StatelessWidget {
+  const AlmuslimIconButton({
     Key? key,
     this.onPressed,
     this.color = Colors.white,

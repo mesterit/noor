@@ -1,4 +1,4 @@
-name: AlMuslim
+name: Almuslim
 description: AlMuslim App
 version: 1.0.0+1
 
@@ -86,9 +86,9 @@ flutter:
           weight: 500
         - asset: assets/fonts/UthmanTN1B.otf
           weight: 700
-    - family: NoorIcons
+    - family: AlmuslimIcons
       fonts:
-        - asset: assets/fonts/NoorIcons.ttf
-    - family: NoorSettingsIcons
+        - asset: assets/fonts/AlmuslimIcons.ttf
+    - family: AlmuslimSettingsIcons
       fonts:
-        - asset: assets/fonts/NoorSettingsIcons.ttf
+        - asset: assets/fonts/AlmuslimSettingsIcons.ttf

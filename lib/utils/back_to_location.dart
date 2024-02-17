@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:noor/constants/categories.dart';
-import 'package:noor/models/data.dart';
-import 'package:noor/exports/pages.dart'
+import 'package:Almuslim/constants/categories.dart';
+import 'package:Almuslim/models/data.dart';
+import 'package:Almuslim/exports/pages.dart'
     show AthkarList, MyAd3yah, AllahNamesList, Ad3yahList;
 import 'package:provider/provider.dart';
 
@@ -21,14 +21,14 @@ backToExactLocation(dynamic item, BuildContext context) async {
   final int index = tmpList.indexOf(item);
 
   switch (item.category) {
-    case NoorCategory.athkar:
+    case AlmuslimCategory.athkar:
       Navigator.of(context).push(
         MaterialPageRoute<AthkarList>(
           builder: (_) => AthkarList(index: index),
         ),
       );
       break;
-    case NoorCategory.myad3yah:
+    case AlmuslimCategory.myad3yah:
       final int index =
           tmpList.indexWhere((dynamic element) => element == item);
 
@@ -38,7 +38,7 @@ backToExactLocation(dynamic item, BuildContext context) async {
         ),
       );
       break;
-    case NoorCategory.allahname:
+    case AlmuslimCategory.allahname:
       Navigator.of(context).push(
         MaterialPageRoute<AllahNamesList>(
           builder: (_) => AllahNamesList(

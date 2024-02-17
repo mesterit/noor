@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:noor/exports/constants.dart' show NoorIcons;
+import 'package:Almuslim/exports/constants.dart' show AlmuslimIcons;
 
 class BottomNav extends StatefulWidget {
   const BottomNav({
@@ -36,7 +36,7 @@ class _BottomNavState extends State<BottomNav> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: BottomItem(
-              icon: NoorIcons.home,
+              icon: AlmuslimIcons.home,
               text: 'نُور',
               currentIndex: currentIndex,
               index: 0,
@@ -45,7 +45,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
           BottomNavigationBarItem(
             icon: BottomItem(
-              icon: NoorIcons.fav,
+              icon: AlmuslimIcons.fav,
               text: 'المفضلة',
               currentIndex: currentIndex,
               index: 1,
@@ -54,7 +54,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
           BottomNavigationBarItem(
             icon: BottomItem(
-              icon: NoorIcons.subha,
+              icon: AlmuslimIcons.subha,
               text: 'السبحة',
               currentIndex: currentIndex,
               index: 2,
@@ -63,7 +63,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
           BottomNavigationBarItem(
             icon: BottomItem(
-              icon: NoorIcons.settings,
+              icon: AlmuslimIcons.settings,
               text: 'الإعدادات',
               currentIndex: currentIndex,
               index: 3,

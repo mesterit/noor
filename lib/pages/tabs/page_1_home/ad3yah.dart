@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:noor/exports/pages.dart' show Ad3yahList, MyAd3yah;
-import 'package:noor/exports/constants.dart' show Titles, NoorCategory;
-import 'package:noor/exports/components.dart' show CardSliverAppBar, ListItem;
-import 'package:noor/exports/controllers.dart' show ThemeModel;
+import 'package:Almuslim/exports/pages.dart' show Ad3yahList, MyAd3yah;
+import 'package:Almuslim/exports/constants.dart' show Titles, AlmuslimCategory;
+import 'package:Almuslim/exports/components.dart' show CardSliverAppBar, ListItem;
+import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
 
 class Ad3yah extends StatefulWidget {
   const Ad3yah({Key? key}) : super(key: key);
@@ -31,22 +31,22 @@ class _Ad3yahState extends State<Ad3yah> with SingleTickerProviderStateMixin {
                 Ad3yahTitleCard(
                   title: Titles.quraan,
                   icon: theme.images.quraanTitleIcon,
-                  category: NoorCategory.quraan,
+                  category: AlmuslimCategory.quraan,
                 ),
                 Ad3yahTitleCard(
                   title: Titles.sunnah,
                   icon: theme.images.sunnahTitleIcon,
-                  category: NoorCategory.sunnah,
+                  category: AlmuslimCategory.sunnah,
                 ),
                 Ad3yahTitleCard(
                   title: Titles.ruqya,
                   icon: theme.images.ruqyaTitleIcon,
-                  category: NoorCategory.ruqiya,
+                  category: AlmuslimCategory.ruqiya,
                 ),
                 Ad3yahTitleCard(
                   title: Titles.myAd3yah,
                   icon: theme.images.myAd3yahTitleIcon,
-                  category: NoorCategory.myad3yah,
+                  category: AlmuslimCategory.myad3yah,
                 ),
               ],
             ),
@@ -67,7 +67,7 @@ class Ad3yahTitleCard extends StatelessWidget {
 
   final String icon;
   final String title;
-  final NoorCategory category;
+  final AlmuslimCategory category;
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +75,7 @@ class Ad3yahTitleCard extends StatelessWidget {
       icon: icon,
       title: title,
       onTap: () {
-        if (category == NoorCategory.myad3yah) {
+        if (category == AlmuslimCategory.myad3yah) {
           Navigator.of(context).push(
             MaterialPageRoute<MyAd3yah>(
               builder: (_) => const MyAd3yah(),

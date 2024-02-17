@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:noor/exports/constants.dart' show Ribbon, viewPadding;
-import 'package:noor/exports/models.dart' show AppSettings;
+import 'package:Almuslim/exports/constants.dart' show Ribbon, viewPadding;
+import 'package:Almuslim/exports/models.dart' show AppSettings;
 
 class CardTemplate extends StatelessWidget {
   CardTemplate({

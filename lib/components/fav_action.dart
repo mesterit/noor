@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
-import 'package:noor/exports/controllers.dart' show DataController;
-import 'package:noor/exports/constants.dart' show Images;
+import 'package:Almuslim/exports/controllers.dart' show DataController;
+import 'package:Almuslim/exports/constants.dart' show Images;
 
 class FavAction extends StatefulWidget {
   FavAction(this.item, {Key? key})

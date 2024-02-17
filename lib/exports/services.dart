@@ -1,4 +1,4 @@
-export 'package:noor/services/db.dart';
-export 'package:noor/services/fcm.dart';
-export 'package:noor/services/json.dart';
-export 'package:noor/services/prefs.dart';
+export 'package:Almuslim/services/db.dart';
+export 'package:Almuslim/services/fcm.dart';
+export 'package:Almuslim/services/json.dart';
+export 'package:Almuslim/services/prefs.dart';

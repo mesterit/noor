@@ -1,4 +1,4 @@
-import 'package:noor/exports/constants.dart' show NoorCategory;
+import 'package:Almuslim/exports/constants.dart' show AlmuslimCategory;
 
 class Doaa {
   late final String id;
@@ -9,7 +9,7 @@ class Doaa {
 
   late final String sectionName;
 
-  late final NoorCategory? category;
+  late final AlmuslimCategory? category;
 
   Doaa._(
     this.id,

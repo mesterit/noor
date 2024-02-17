@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:noor/constants/categories.dart';
-import 'package:noor/constants/ribbons.dart';
-import 'package:noor/models/doaa.dart';
+import 'package:Almuslim/constants/categories.dart';
+import 'package:Almuslim/constants/ribbons.dart';
+import 'package:Almuslim/models/doaa.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
@@ -25,7 +25,7 @@ class DBService with ChangeNotifier {
 
   initDB() async {
     Directory documentsDirectory = await getApplicationDocumentsDirectory();
-    String path = join(documentsDirectory.path, 'NoorDB.db');
+    String path = join(documentsDirectory.path, 'AlmuslimDB.db');
     return await openDatabase(
       path,
       version: 2,
@@ -80,7 +80,7 @@ class DBService with ChangeNotifier {
                 'text': e['text'],
                 'info': e['info'],
                 'ribbon': Ribbon.ribbon5,
-                'category': NoorCategory.myad3yah,
+                'category': AlmuslimCategory.myad3yah,
                 'sectionName': 'أدعيتي',
                 'isFav': e['isFav'] == 1 ? true : false,
               };

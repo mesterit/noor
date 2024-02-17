@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:noor/exports/pages.dart' show RootHome;
-import 'package:noor/exports/components.dart' show NoorLogo;
-import 'package:noor/models/theme.dart';
+import 'package:Almuslim/exports/pages.dart' show RootHome;
+import 'package:Almuslim/exports/components.dart' show AlmuslimLogo;
+import 'package:Almuslim/models/theme.dart';
 import 'package:provider/provider.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -49,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: AnimatedOpacity(
           duration: const Duration(milliseconds: 200),
           opacity: logoOpacity,
-          child: const NoorLogo(size: 80),
+          child: const AlmuslimLogo(size: 80),
         ),
       ),
     );

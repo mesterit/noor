@@ -1,4 +1,4 @@
-import 'package:noor/exports/constants.dart' show NoorCategory, Ribbon;
+import 'package:Almuslim/exports/constants.dart' show AlmuslimCategory, Ribbon;
 
 class AllahName {
   late final String id;
@@ -6,7 +6,7 @@ class AllahName {
   late final String text;
   final String sectionName = 'أسماء الله الحسنى';
   final String ribbon = Ribbon.ribbon6;
-  final NoorCategory category = NoorCategory.allahname;
+  final AlmuslimCategory category = AlmuslimCategory.allahname;
   late bool isFav;
   late final int section;
   late final bool inApp;

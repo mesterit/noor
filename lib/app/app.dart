@@ -4,15 +4,15 @@ import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'package:noor/exports/pages.dart' show SplashScreen;
-import 'package:noor/exports/models.dart' show DataModel, AppSettings;
-import 'package:noor/exports/components.dart' show CustomScrollBehavior;
-import 'package:noor/exports/controllers.dart' show ThemeModel;
-import 'package:noor/exports/constants.dart' show lightTheme, darkTheme;
-import 'package:noor/pages/tabs/page_3_counter/counter_view_model.dart';
+import 'package:Almuslim/exports/pages.dart' show SplashScreen;
+import 'package:Almuslim/exports/models.dart' show DataModel, AppSettings;
+import 'package:Almuslim/exports/components.dart' show CustomScrollBehavior;
+import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
+import 'package:Almuslim/exports/constants.dart' show lightTheme, darkTheme;
+import 'package:Almuslim/pages/tabs/page_3_counter/counter_view_model.dart';
 
-class NoorApp extends StatelessWidget {
-  const NoorApp({Key? key}) : super(key: key);
+class AlmuslimApp extends StatelessWidget {
+  const AlmuslimApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

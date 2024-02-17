@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'dialog_button.dart';
 
-class NoorAlertDialog extends StatelessWidget {
-  const NoorAlertDialog(
+class AlmuslimAlertDialog extends StatelessWidget {
+  const AlmuslimAlertDialog(
     this.context, {
     Key? key,
     this.title = '',
@@ -13,8 +13,8 @@ class NoorAlertDialog extends StatelessWidget {
   final String content;
   final BuildContext context;
 
-  static NoorAlertDialog of(BuildContext context) {
-    return NoorAlertDialog(context);
+  static AlmuslimAlertDialog of(BuildContext context) {
+    return AlmuslimAlertDialog(context);
   }
 
   Future<bool?> show({
@@ -32,7 +32,7 @@ class NoorAlertDialog extends StatelessWidget {
             Curves.easeInOutBack.transform(a1.value) - 1.0;
         return Transform(
           transform: Matrix4.translationValues(0.0, curvedValue * 800, 0.0),
-          child: NoorAlertDialog(
+          child: AlmuslimAlertDialog(
             context,
             title: title,
             content: content,

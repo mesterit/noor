@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:noor/components/adaptive_icon.dart';
-import 'package:noor/models/data.dart';
-import 'package:noor/services/fcm.dart';
+import 'package:Almuslim/components/adaptive_icon.dart';
+import 'package:Almuslim/models/data.dart';
+import 'package:Almuslim/services/fcm.dart';
 import 'package:provider/provider.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -12,12 +12,12 @@ import 'package:intl/intl.dart' as intl;
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-import 'package:noor/exports/components.dart' show CardTemplate, CardText;
-import 'package:noor/exports/services.dart' show SharedPrefsService;
-import 'package:noor/exports/controllers.dart' show ThemeModel, AppSettings;
-import 'package:noor/exports/constants.dart'
-    show Images, Links, NoorIcons, Strings;
-import 'package:noor/exports/utils.dart' show ToArabicNumbers;
+import 'package:Almuslim/exports/components.dart' show CardTemplate, CardText;
+import 'package:Almuslim/exports/services.dart' show SharedPrefsService;
+import 'package:Almuslim/exports/controllers.dart' show ThemeModel, AppSettings;
+import 'package:Almuslim/exports/constants.dart'
+    show Images, Links, AlmuslimIcons, Strings;
+import 'package:Almuslim/exports/utils.dart' show ToArabicNumbers;
 
 class Settings extends StatefulWidget {
   const Settings({
@@ -287,7 +287,7 @@ class _SettingsState extends State<Settings>
                   const Divider(),
                   subtitleWithIcon(
                     'حجم الخط',
-                    NoorIcons.fontSize,
+                    AlmuslimIcons.fontSize,
                   ),
                   Directionality(
                     textDirection: TextDirection.ltr,
@@ -343,7 +343,7 @@ class _SettingsState extends State<Settings>
                   const Divider(),
                   subtitleWithIcon(
                     'نوع الخط',
-                    NoorIcons.fontType,
+                    AlmuslimIcons.fontType,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
@@ -359,7 +359,7 @@ class _SettingsState extends State<Settings>
                   ),
                   const Divider(),
                   switcherOption(
-                    icon: NoorIcons.tashkeel,
+                    icon: AlmuslimIcons.tashkeel,
                     title: 'التشكيل',
                     value: settings.tashkeel,
                     onChanged: (bool value) => settings.tashkeel = value,
@@ -369,7 +369,7 @@ class _SettingsState extends State<Settings>
                   title('العداد'),
                   const Divider(),
                   switcherOption(
-                    icon: NoorIcons.jump,
+                    icon: AlmuslimIcons.jump,
                     title: 'الانتقال التلقائي إلى الذكر التالي',
                     value: settings.autoJump,
                     onChanged: (bool value) => settings.autoJump = value,
@@ -414,7 +414,7 @@ class _SettingsState extends State<Settings>
                   title('الهزاز'),
                   const Divider(),
                   switcherOption(
-                    icon: NoorIcons.vibrate,
+                    icon: AlmuslimIcons.vibrate,
                     title: 'الهزاز لعداد صفحة الأذكار',
                     value: settings.vibrate,
                     onChanged: (bool value) => settings.vibrate = value,
@@ -432,7 +432,7 @@ class _SettingsState extends State<Settings>
                         ),
                         const VerticalSpace(),
                         segmentedControlOption(
-                          icon: NoorIcons.click,
+                          icon: AlmuslimIcons.click,
                           title: 'لكل ضغطة',
                           value: settings.vibrationClick,
                           onChanged: (String? value) {
@@ -447,7 +447,7 @@ class _SettingsState extends State<Settings>
                         ),
                         const VerticalSpace(),
                         segmentedControlOption(
-                          icon: NoorIcons.done,
+                          icon: AlmuslimIcons.done,
                           title: 'عند اكتمال العد',
                           value: settings.vibrationDone,
                           onChanged: (String? value) {
@@ -471,7 +471,7 @@ class _SettingsState extends State<Settings>
                     duration: const Duration(milliseconds: 300),
                   ),
                   switcherOption(
-                    icon: NoorIcons.vibrate,
+                    icon: AlmuslimIcons.vibrate,
                     title: 'الهزاز لصفحة السبحة',
                     value: settings.vibrateCounter,
                     onChanged: (bool value) => settings.vibrateCounter = value,
@@ -489,7 +489,7 @@ class _SettingsState extends State<Settings>
                         ),
                         const VerticalSpace(),
                         segmentedControlOption(
-                            icon: NoorIcons.click,
+                            icon: AlmuslimIcons.click,
                             title: 'لكل ضغطة',
                             value: settings.vibrationClickCounter,
                             onChanged: (String? value) {
@@ -503,7 +503,7 @@ class _SettingsState extends State<Settings>
                             }),
                         const VerticalSpace(),
                         segmentedControlOption(
-                          icon: NoorIcons.done,
+                          icon: AlmuslimIcons.done,
                           title: 'عند مضاعفات المئة',
                           value: settings.vibrationHunderds,
                           onChanged: (String? value) {
@@ -533,7 +533,7 @@ class _SettingsState extends State<Settings>
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       subtitleWithIcon(
-                          'التنبيه لأذكار الصباح', NoorIcons.morning),
+                          'التنبيه لأذكار الصباح', AlmuslimIcons.morning),
                       morningNotiEnabled
                           ? SizedBox(
                               width: 100,
@@ -732,7 +732,7 @@ class _SettingsState extends State<Settings>
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       subtitleWithIcon(
-                          'التنبيه لأذكار المساء', NoorIcons.night),
+                          'التنبيه لأذكار المساء', AlmuslimIcons.night),
                       nightNotiEnabled
                           ? SizedBox(
                               width: 100,
@@ -934,7 +934,7 @@ class _SettingsState extends State<Settings>
                   ),
                   const Divider(),
                   switcherOption(
-                    icon: NoorIcons.notifications,
+                    icon: AlmuslimIcons.notifications,
                     title: 'إشعارات عامة',
                     value: settings.generalNotification,
                     onChanged: (bool value) {
@@ -950,19 +950,19 @@ class _SettingsState extends State<Settings>
                   title('المظهر'),
                   const Divider(),
                   radioBtn(
-                    NoorIcons.lightMode,
+                    AlmuslimIcons.lightMode,
                     'الوضع النهاري',
                     'light_theme',
                   ),
                   const Divider(),
                   radioBtn(
-                    NoorIcons.darkMode,
+                    AlmuslimIcons.darkMode,
                     'الوضع الليلي',
                     'dark_theme',
                   ),
                   const Divider(),
                   radioBtn(
-                    NoorIcons.systemMode,
+                    AlmuslimIcons.systemMode,
                     'وضع النظام',
                     'system_theme',
                   ),
@@ -976,7 +976,7 @@ class _SettingsState extends State<Settings>
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       width: MediaQuery.of(context).size.width,
                       child: subtitleWithIcon(
-                          'قسم أسماء الله الحُسنى', NoorIcons.allahNames),
+                          'قسم أسماء الله الحُسنى', AlmuslimIcons.allahNames),
                     ),
                   ),
                   const Divider(),
@@ -984,7 +984,7 @@ class _SettingsState extends State<Settings>
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     width: MediaQuery.of(context).size.width,
                     child: subtitleWithIcon(
-                        'قسم الرقية الشرعية، كُتيب أَوراد', NoorIcons.ruqiya),
+                        'قسم الرقية الشرعية، كُتيب أَوراد', AlmuslimIcons.ruqiya),
                   ),
                   const Divider(),
                   const SizedBox(height: 10.0),
@@ -995,7 +995,7 @@ class _SettingsState extends State<Settings>
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       width: MediaQuery.of(context).size.width,
-                      child: subtitleWithIcon('تقييم التطبيق', NoorIcons.star),
+                      child: subtitleWithIcon('تقييم التطبيق', AlmuslimIcons.star),
                     ),
                   ),
                   const Divider(),
@@ -1004,7 +1004,7 @@ class _SettingsState extends State<Settings>
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       width: MediaQuery.of(context).size.width,
-                      child: subtitleWithIcon('نشر التطبيق', NoorIcons.share),
+                      child: subtitleWithIcon('نشر التطبيق', AlmuslimIcons.share),
                     ),
                   ),
                   const Divider(),
@@ -1013,7 +1013,7 @@ class _SettingsState extends State<Settings>
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       width: MediaQuery.of(context).size.width,
-                      child: subtitleWithIcon('تواصل معنا', NoorIcons.mail),
+                      child: subtitleWithIcon('تواصل معنا', AlmuslimIcons.mail),
                     ),
                   ),
                   const Divider(),
@@ -1023,7 +1023,7 @@ class _SettingsState extends State<Settings>
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        subtitleWithIcon('شبكات التواصل', NoorIcons.follow),
+                        subtitleWithIcon('شبكات التواصل', AlmuslimIcons.follow),
                         Row(
                           children: <Widget>[
                             GestureDetector(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NoorCloseButton extends StatelessWidget {
-  const NoorCloseButton({
+class AlmuslimCloseButton extends StatelessWidget {
+  const AlmuslimCloseButton({
     Key? key,
     this.size,
     this.color,

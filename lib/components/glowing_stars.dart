@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:noor/constants/images.dart';
+import 'package:Almuslim/constants/images.dart';
 
 enum StarType { circle, normal }
 

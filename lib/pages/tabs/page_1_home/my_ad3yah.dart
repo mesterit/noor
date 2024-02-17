@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:noor/components/dialog_button.dart';
+import 'package:Almuslim/components/dialog_button.dart';
 import 'package:provider/provider.dart';
 import 'package:reorderables/reorderables.dart';
 
-import 'package:noor/exports/controllers.dart' show ThemeModel, DataController;
-import 'package:noor/exports/constants.dart'
+import 'package:Almuslim/exports/controllers.dart' show ThemeModel, DataController;
+import 'package:Almuslim/exports/constants.dart'
     show Images, Ribbon, Strings, viewPadding;
-import 'package:noor/exports/models.dart' show DataModel, Doaa;
-import 'package:noor/exports/components.dart'
+import 'package:Almuslim/exports/models.dart' show DataModel, Doaa;
+import 'package:Almuslim/exports/components.dart'
     show
         CardTemplate,
-        NoorCloseButton,
+        AlmuslimCloseButton,
         DeleteConfirmationDialog,
         ImageButton,
         CardText,
@@ -126,7 +126,7 @@ class _MyAd3yahState extends State<MyAd3yah> with TickerProviderStateMixin {
                           fontSize: 20,
                         ),
                       ),
-                      const NoorCloseButton(size: 35)
+                      const AlmuslimCloseButton(size: 35)
                     ],
                   ),
                 ),

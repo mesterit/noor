@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:noor/exports/constants.dart' show Images;
-import 'package:noor/exports/services.dart' show SharedPrefsService;
+import 'package:Almuslim/exports/constants.dart' show Images;
+import 'package:Almuslim/exports/services.dart' show SharedPrefsService;
 
 import '../constants/colors.dart';
 
@@ -45,19 +45,19 @@ class ThemeModel with ChangeNotifier {
     }
   }
 
-  NoorColors get colors {
+  AlmuslimColors get colors {
     switch (userTheme) {
       case 'dark_theme':
-        return NoorColors.dark;
+        return AlmuslimColors.dark;
       case 'light_theme':
-        return NoorColors.light;
+        return AlmuslimColors.light;
       default:
         {
           switch (brightness) {
             case Brightness.dark:
-              return NoorColors.dark;
+              return AlmuslimColors.dark;
             default:
-              return NoorColors.light;
+              return AlmuslimColors.light;
           }
         }
     }

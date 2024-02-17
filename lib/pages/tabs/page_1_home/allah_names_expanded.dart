@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import 'package:noor/exports/models.dart' show DataModel, AllahName;
-import 'package:noor/exports/constants.dart' show Images, Ribbon;
-import 'package:noor/exports/components.dart'
+import 'package:Almuslim/exports/models.dart' show DataModel, AllahName;
+import 'package:Almuslim/exports/constants.dart' show Images, Ribbon;
+import 'package:Almuslim/exports/components.dart'
     show
-        NoorCloseButton,
+        AlmuslimCloseButton,
         CardTemplate,
         NameTitleCard,
         FavAction,
@@ -118,7 +118,7 @@ class _AllahNamesListState extends State<AllahNamesList>
                       },
                     ),
                   ),
-                  NoorCloseButton(
+                  AlmuslimCloseButton(
                       color: Theme.of(context).colorScheme.secondary),
                 ],
               ),
@@ -224,7 +224,7 @@ class ReferenceList extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headline1,
                   ),
-                  NoorCloseButton(
+                  AlmuslimCloseButton(
                       color: Theme.of(context).colorScheme.secondary),
                 ],
               ),

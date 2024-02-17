@@ -1,3 +1,3 @@
-export 'package:noor/controllers/data_controller.dart';
-export 'package:noor/models/settings.dart';
-export 'package:noor/models/theme.dart';
+export 'package:Almuslim/controllers/data_controller.dart';
+export 'package:Almuslim/models/settings.dart';
+export 'package:Almuslim/models/theme.dart';

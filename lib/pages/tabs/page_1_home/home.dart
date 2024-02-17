@@ -2,25 +2,25 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get_it/get_it.dart';
-import 'package:noor/env_config.dart';
-import 'package:noor/services/remote_config.dart';
+import 'package:Almuslim/env_config.dart';
+import 'package:Almuslim/services/remote_config.dart';
 
 import 'package:provider/provider.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
-import 'package:noor/exports/constants.dart' show Images;
-import 'package:noor/exports/pages.dart' show AllahNames, AthkarPage, Ad3yah;
-import 'package:noor/exports/components.dart' show GlowingStars, HomeCard;
-import 'package:noor/exports/utils.dart' show backToExactLocation, Tashkeel;
-import 'package:noor/exports/controllers.dart' show ThemeModel;
-import 'package:noor/exports/services.dart' show SharedPrefsService;
-import 'package:noor/exports/models.dart' show AllahName, DataModel;
+import 'package:Almuslim/exports/constants.dart' show Images;
+import 'package:Almuslim/exports/pages.dart' show AllahNames, AthkarPage, Ad3yah;
+import 'package:Almuslim/exports/components.dart' show GlowingStars, HomeCard;
+import 'package:Almuslim/exports/utils.dart' show backToExactLocation, Tashkeel;
+import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
+import 'package:Almuslim/exports/services.dart' show SharedPrefsService;
+import 'package:Almuslim/exports/models.dart' show AllahName, DataModel;
 
-export 'package:noor/pages/tabs/page_1_home/ad3yah_expanded.dart';
-export 'package:noor/pages/tabs/page_1_home/allah_names_expanded.dart';
-export 'package:noor/pages/tabs/page_1_home/athkar_expanded.dart';
-export 'package:noor/pages/tabs/page_1_home/my_ad3yah.dart';
+export 'package:Almuslim/pages/tabs/page_1_home/ad3yah_expanded.dart';
+export 'package:Almuslim/pages/tabs/page_1_home/allah_names_expanded.dart';
+export 'package:Almuslim/pages/tabs/page_1_home/athkar_expanded.dart';
+export 'package:Almuslim/pages/tabs/page_1_home/my_ad3yah.dart';
 
 class Home extends StatefulWidget {
   const Home({
@@ -353,7 +353,7 @@ class _AnimatedHeaderState extends State<AnimatedHeader>
 
   Future<void> _loadRemoteConfig() async {
     remoteConfigNotifier.value =
-        await RemoteConfigService.instance.fetchNoorRC();
+        await RemoteConfigService.instance.fetchAlmuslimRC();
   }
 
   Future<void> _setupReceivingFCM() async {

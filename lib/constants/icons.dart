@@ -1,6 +1,6 @@
-import 'package:noor/env_config.dart';
+import 'package:Almuslim/env_config.dart';
 
-class NoorIcons {
+class AlmuslimIcons {
   static String home = 'assets/icons/bottom-nav/${prefix}home.svg';
   static String fav = 'assets/icons/bottom-nav/${prefix}fav.svg';
   static String subha = 'assets/icons/bottom-nav/${prefix}subha.svg';

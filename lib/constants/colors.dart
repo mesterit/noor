@@ -1,4 +1,4 @@
-class NoorColors {
+class AlmuslimColors {
   static LightModeColors get light => LightModeColors();
   static DarkModeColors get dark => DarkModeColors();
 
@@ -7,14 +7,14 @@ class NoorColors {
   final int subhaLockBg = 0;
 }
 
-class DarkModeColors extends NoorColors {
+class DarkModeColors extends AlmuslimColors {
   @override
   int get subhaListItemBg => 0xff1D274C;
   @override
   int get subhaLockBg => 0xff375089;
 }
 
-class LightModeColors extends NoorColors {
+class LightModeColors extends AlmuslimColors {
   @override
   int get subhaListItemBg => 0xffffffff;
   @override

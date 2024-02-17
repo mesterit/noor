@@ -3,11 +3,11 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import 'package:noor/exports/models.dart' show AthkarCounter, DataModel, Thekr;
-import 'package:noor/exports/controllers.dart' show AppSettings;
-import 'package:noor/exports/components.dart'
-    show NoorCloseButton, ThekrTitleCard, AthkarCard;
-import 'package:noor/exports/constants.dart' show viewPadding;
+import 'package:Almuslim/exports/models.dart' show AthkarCounter, DataModel, Thekr;
+import 'package:Almuslim/exports/controllers.dart' show AppSettings;
+import 'package:Almuslim/exports/components.dart'
+    show AlmuslimCloseButton, ThekrTitleCard, AthkarCard;
+import 'package:Almuslim/exports/constants.dart' show viewPadding;
 
 class AthkarList extends StatefulWidget {
   const AthkarList({Key? key, required this.index}) : super(key: key);
@@ -121,7 +121,7 @@ class _AthkarListState extends State<AthkarList>
                       },
                     ),
                   ),
-                  NoorCloseButton(
+                  AlmuslimCloseButton(
                       color: Theme.of(context).colorScheme.secondary),
                 ],
               ),

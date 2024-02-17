@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:noor/constants/categories.dart';
-import 'package:noor/constants/theme.dart';
+import 'package:Almuslim/constants/categories.dart';
+import 'package:Almuslim/constants/theme.dart';
 import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import 'package:noor/exports/components.dart'
-    show NoorCloseButton, CardTemplate, FavAction, CardText, CopyAction;
-import 'package:noor/exports/models.dart' show Doaa, DataModel;
+import 'package:Almuslim/exports/components.dart'
+    show AlmuslimCloseButton, CardTemplate, FavAction, CardText, CopyAction;
+import 'package:Almuslim/exports/models.dart' show Doaa, DataModel;
 
 class Ad3yahList extends StatefulWidget {
   const Ad3yahList({
@@ -15,7 +15,7 @@ class Ad3yahList extends StatefulWidget {
     required this.category,
   }) : super(key: key);
   final int index;
-  final NoorCategory category;
+  final AlmuslimCategory category;
   @override
   _Ad3yahListState createState() => _Ad3yahListState();
 }
@@ -58,7 +58,7 @@ class _Ad3yahListState extends State<Ad3yahList> {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headline1,
                   ),
-                  NoorCloseButton(
+                  AlmuslimCloseButton(
                       color: Theme.of(context).colorScheme.secondary),
                 ],
               ),

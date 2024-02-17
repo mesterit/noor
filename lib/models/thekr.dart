@@ -1,4 +1,4 @@
-import 'package:noor/exports/constants.dart' show NoorCategory, Ribbon;
+import 'package:Almuslim/exports/constants.dart' show AlmuslimCategory, Ribbon;
 
 class Thekr {
   late final String id;
@@ -11,7 +11,7 @@ class Thekr {
 
   late final int counter;
 
-  final NoorCategory category = NoorCategory.athkar;
+  final AlmuslimCategory category = AlmuslimCategory.athkar;
   final String ribbon = Ribbon.ribbon1;
 
   Thekr._(

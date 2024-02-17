@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-import 'package:noor/app/app.dart';
-import 'package:noor/exports/controllers.dart' show DataController;
-import 'package:noor/exports/models.dart' show DataModel;
-import 'package:noor/exports/services.dart'
+import 'package:Almuslim/app/app.dart';
+import 'package:Almuslim/exports/controllers.dart' show DataController;
+import 'package:Almuslim/exports/models.dart' show DataModel;
+import 'package:Almuslim/exports/services.dart'
     show DBService, SharedPrefsService, FCMService;
-import 'package:noor/exports/models.dart' show AppSettings;
-import 'package:noor/pages/tabs/page_3_counter/counter_view_model.dart';
+import 'package:Almuslim/exports/models.dart' show AppSettings;
+import 'package:Almuslim/pages/tabs/page_3_counter/counter_view_model.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,5 +24,5 @@ void main() async {
   GetIt.I
       .registerSingletonAsync<CounterViewModel>(() => CounterViewModel.init());
 
-  runApp(const NoorApp());
+  runApp(const AlmuslimApp());
 }

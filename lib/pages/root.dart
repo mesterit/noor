@@ -2,9 +2,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
-import 'package:noor/exports/components.dart' show BottomNav;
-import 'package:noor/exports/controllers.dart' show ThemeModel;
-import 'package:noor/exports/pages.dart'
+import 'package:Almuslim/exports/components.dart' show BottomNav;
+import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
+import 'package:Almuslim/exports/pages.dart'
     show Home, Favorite, CounterView, Settings, AthkarList;
 import 'package:provider/provider.dart';
 
