@@ -4,7 +4,7 @@ import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
 import 'package:provider/provider.dart';
 
 class AlmuslimLogo extends StatelessWidget {
-  const AlmuslimLogo({Key? key, required this.size}) : super(key: key);
+  const   AlmuslimLogo({Key? key, required this.size}) : super(key: key);
   final double size;
 
   @override

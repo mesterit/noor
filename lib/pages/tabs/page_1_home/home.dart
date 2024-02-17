@@ -421,9 +421,16 @@ class _AnimatedHeaderState extends State<AnimatedHeader>
                   child: Column(
                     children: <Widget>[
                       const SizedBox(height: 5),
-                      SvgPicture.asset(
-                        'assets/images/${prefix}logo-dark.svg',
-                        width: 60,
+                      const Text(
+                        "المسلم",
+                        key: ValueKey<String>("المسلم"),
+                        textAlign: TextAlign.center,
+                        style:  TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          height: 2.5,
+                            fontWeight: FontWeight.bold
+                        ),
                       ),
                       const SizedBox(height: 15),
                       ValueListenableBuilder<String>(

@@ -49,7 +49,17 @@ class _SplashScreenState extends State<SplashScreen> {
         child: AnimatedOpacity(
           duration: const Duration(milliseconds: 200),
           opacity: logoOpacity,
-          child: const AlmuslimLogo(size: 80),
+          child:const Text(
+            "المسلم",
+            key: ValueKey<String>("المسلم"),
+            textAlign: TextAlign.center,
+            style:  TextStyle(
+              color: Colors.white,
+              fontSize: 28,
+              height: 3.5,
+              fontWeight: FontWeight.bold
+            ),
+          ),
         ),
       ),
     );
