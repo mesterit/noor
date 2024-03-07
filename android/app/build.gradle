@@ -1,3 +1,10 @@
+plugins {
+        id "com.android.application"
+        id "kotlin-android"
+        id "dev.flutter.flutter-gradle-plugin"
+        id "com.google.gms.google-services"
+        id "com.google.firebase.crashlytics"
+    }
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
@@ -6,10 +13,7 @@ if (localPropertiesFile.exists()) {
     }
 }
 
-def flutterRoot = localProperties.getProperty('flutter.sdk')
-if (flutterRoot == null) {
-    //throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
-}
+
 
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
 if (flutterVersionCode == null) {
@@ -21,8 +25,7 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0.0'
 }
 
-apply plugin: 'com.android.application'
-apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
  def keystoreProperties = new Properties()
  def keystorePropertiesFile = rootProject.file('key.properties')
 if (keystorePropertiesFile.exists()) {
@@ -42,7 +45,8 @@ android {
         }
 
     defaultConfig {
-        applicationId "com.almuslim.app"
+        applicationId "com.janaty.app"
+        namespace "com.janaty.app"
         minSdkVersion 24
         targetSdkVersion 34
         versionCode flutterVersionCode.toInteger()
@@ -73,12 +77,14 @@ android {
    }
 
         compileOptions {
+            coreLibraryDesugaringEnabled true
             sourceCompatibility = JavaVersion.VERSION_11
             targetCompatibility = JavaVersion.VERSION_11
         }
-//        kotlinOptions {
-//            jvmTarget = "11"
-//        }
+
+        kotlinOptions {
+            jvmTarget = "11"
+        }
 }
 
 flutter {
@@ -87,24 +93,22 @@ flutter {
 allprojects {
     repositories {
         google()
-        jcenter()
-        maven {
-            url "https://maven.google.com"
-        }
+        mavenCentral()
     }
 }
 
-
-
 dependencies {
-    // Import the Firebase BoM
-    implementation platform('com.google.firebase:firebase-bom:32.7.2')
-    testImplementation 'junit:junit:4.13.1'
-    androidTestImplementation 'androidx.test:runner:1.3.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation 'com.google.firebase:firebase-analytics:17.2.2'
-    implementation 'androidx.multidex:multidex:2.0.1'
-    implementation group: 'com.google.android.material', name: 'material', version: '1.1.0-alpha05'
-
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
 }
-apply plugin: 'com.google.gms.google-services'
+
+//dependencies {
+//    // Import the Firebase BoM
+//    implementation platform('com.google.firebase:firebase-bom:32.7.2')
+//    testImplementation 'junit:junit:4.13.1'
+//    androidTestImplementation 'androidx.test:runner:1.3.0'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+//    implementation 'androidx.multidex:multidex:2.0.1'
+//    implementation group: 'com.google.android.material', name: 'material', version: '1.1.0-alpha05'
+//
+//}

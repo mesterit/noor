@@ -1,28 +1,10 @@
 
-//plugins {
-//    // ...
-//    // Add the dependency for the Google services Gradle plugin
-//    id 'com.google.gms.google-services' version '4.4.1' apply false
-//
-//}
-buildscript {
-    ext.kotlin_version = '1.8.0'
-    repositories {
-        google()
-        mavenCentral() 
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.google.gms:google-services:4.3.14'
-        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.1'
-    }
-}
 allprojects {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://maven.google.com/" }
     }
 }
 
@@ -34,6 +16,11 @@ subprojects {
     project.evaluationDependsOn(':app')
 }
 
+configurations.all {
+    resolutionStrategy {
+        force("androidx.core:core-ktx:1.9.0")
+    }
+}
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }

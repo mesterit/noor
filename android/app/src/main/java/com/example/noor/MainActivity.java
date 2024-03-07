@@ -1,4 +1,4 @@
-package com.almuslim.app;
+package com.janaty.app;
 
 import io.flutter.embedding.android.FlutterActivity;
 

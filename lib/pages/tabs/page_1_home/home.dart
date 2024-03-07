@@ -428,8 +428,8 @@ class _AnimatedHeaderState extends State<AnimatedHeader>
                     children: <Widget>[
                       const SizedBox(height: 5),
                       const Text(
-                        "جنتي",
-                        key: ValueKey<String>("جنتي"),
+                        "جَنَّتِي",
+                        key: ValueKey<String>("جَنَّتِي"),
                         textAlign: TextAlign.center,
                         style:  TextStyle(
                           color: Colors.white,
