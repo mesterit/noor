@@ -6,7 +6,7 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:Janaty/exports/models.dart' show AthkarCounter, DataModel, Thekr;
 import 'package:Janaty/exports/controllers.dart' show AppSettings;
 import 'package:Janaty/exports/components.dart'
-    show AlmuslimCloseButton, ThekrTitleCard, AthkarCard;
+    show JanatyCloseButton, ThekrTitleCard, AthkarCard;
 import 'package:Janaty/exports/constants.dart' show viewPadding;
 
 class AthkarList extends StatefulWidget {
@@ -121,7 +121,7 @@ class _AthkarListState extends State<AthkarList>
                       },
                     ),
                   ),
-                  AlmuslimCloseButton(
+                  JanatyCloseButton(
                       color: Theme.of(context).colorScheme.secondary),
                 ],
               ),

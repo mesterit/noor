@@ -24,5 +24,5 @@ void main() async {
   GetIt.I
       .registerSingletonAsync<CounterViewModel>(() => CounterViewModel.init());
 
-  runApp(const AlmuslimApp());
+  runApp(const JanatyApp());
 }

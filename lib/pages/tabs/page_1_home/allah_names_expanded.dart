@@ -6,7 +6,7 @@ import 'package:Janaty/exports/models.dart' show DataModel, AllahName;
 import 'package:Janaty/exports/constants.dart' show Images, Ribbon;
 import 'package:Janaty/exports/components.dart'
     show
-        AlmuslimCloseButton,
+        JanatyCloseButton,
         CardTemplate,
         NameTitleCard,
         FavAction,
@@ -118,7 +118,7 @@ class _AllahNamesListState extends State<AllahNamesList>
                       },
                     ),
                   ),
-                  AlmuslimCloseButton(
+                  JanatyCloseButton(
                       color: Theme.of(context).colorScheme.secondary),
                 ],
               ),
@@ -224,7 +224,7 @@ class ReferenceList extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headline1,
                   ),
-                  AlmuslimCloseButton(
+                  JanatyCloseButton(
                       color: Theme.of(context).colorScheme.secondary),
                 ],
               ),

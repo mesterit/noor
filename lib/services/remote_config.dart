@@ -20,11 +20,11 @@ class RemoteConfigService {
     );
 
     _remoteConfig.setDefaults(<String, dynamic>{
-      'AlmuslimThker': Strings.AlmuslimThekrDefault,
+      'JanatyThker': Strings.JanatyThekrDefault,
     });
   }
 
-  Future<String> fetchAlmuslimRC() async {
+  Future<String> fetchJanatyRC() async {
     if (SharedPrefsService.getBool('CONFIG_STATE')) {
       SharedPrefsService.putBool('CONFIG_STATE', false);
 
@@ -37,6 +37,6 @@ class RemoteConfigService {
       }
     }
 
-    return _remoteConfig.getString('AlmuslimThker');
+    return _remoteConfig.getString('JanatyThker');
   }
 }

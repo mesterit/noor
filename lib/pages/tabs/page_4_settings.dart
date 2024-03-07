@@ -16,7 +16,7 @@ import 'package:Janaty/exports/components.dart' show CardTemplate, CardText;
 import 'package:Janaty/exports/services.dart' show SharedPrefsService;
 import 'package:Janaty/exports/controllers.dart' show ThemeModel, AppSettings;
 import 'package:Janaty/exports/constants.dart'
-    show Images, Links, AlmuslimIcons, Strings;
+    show Images, Links, JanatyIcons, Strings;
 import 'package:Janaty/exports/utils.dart' show ToArabicNumbers;
 
 class Settings extends StatefulWidget {
@@ -288,7 +288,7 @@ class _SettingsState extends State<Settings>
                   const Divider(),
                   subtitleWithIcon(
                     'حجم الخط',
-                    AlmuslimIcons.fontSize,
+                    JanatyIcons.fontSize,
                   ),
                   Directionality(
                     textDirection: TextDirection.ltr,
@@ -344,7 +344,7 @@ class _SettingsState extends State<Settings>
                   const Divider(),
                   subtitleWithIcon(
                     'نوع الخط',
-                    AlmuslimIcons.fontType,
+                    JanatyIcons.fontType,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
@@ -360,7 +360,7 @@ class _SettingsState extends State<Settings>
                   ),
                   const Divider(),
                   switcherOption(
-                    icon: AlmuslimIcons.tashkeel,
+                    icon: JanatyIcons.tashkeel,
                     title: 'التشكيل',
                     value: settings.tashkeel,
                     onChanged: (bool value) => settings.tashkeel = value,
@@ -370,7 +370,7 @@ class _SettingsState extends State<Settings>
                   title('العداد'),
                   const Divider(),
                   switcherOption(
-                    icon: AlmuslimIcons.jump,
+                    icon: JanatyIcons.jump,
                     title: 'الانتقال التلقائي إلى الذكر التالي',
                     value: settings.autoJump,
                     onChanged: (bool value) => settings.autoJump = value,
@@ -415,7 +415,7 @@ class _SettingsState extends State<Settings>
                   title('الهزاز'),
                   const Divider(),
                   switcherOption(
-                    icon: AlmuslimIcons.vibrate,
+                    icon: JanatyIcons.vibrate,
                     title: 'الهزاز لعداد صفحة الأذكار',
                     value: settings.vibrate,
                     onChanged: (bool value) => settings.vibrate = value,
@@ -433,7 +433,7 @@ class _SettingsState extends State<Settings>
                         ),
                         const VerticalSpace(),
                         segmentedControlOption(
-                          icon: AlmuslimIcons.click,
+                          icon: JanatyIcons.click,
                           title: 'لكل ضغطة',
                           value: settings.vibrationClick,
                           onChanged: (String? value) {
@@ -448,7 +448,7 @@ class _SettingsState extends State<Settings>
                         ),
                         const VerticalSpace(),
                         segmentedControlOption(
-                          icon: AlmuslimIcons.done,
+                          icon: JanatyIcons.done,
                           title: 'عند اكتمال العد',
                           value: settings.vibrationDone,
                           onChanged: (String? value) {
@@ -472,7 +472,7 @@ class _SettingsState extends State<Settings>
                     duration: const Duration(milliseconds: 300),
                   ),
                   switcherOption(
-                    icon: AlmuslimIcons.vibrate,
+                    icon: JanatyIcons.vibrate,
                     title: 'الهزاز لصفحة السبحة',
                     value: settings.vibrateCounter,
                     onChanged: (bool value) => settings.vibrateCounter = value,
@@ -490,7 +490,7 @@ class _SettingsState extends State<Settings>
                         ),
                         const VerticalSpace(),
                         segmentedControlOption(
-                            icon: AlmuslimIcons.click,
+                            icon: JanatyIcons.click,
                             title: 'لكل ضغطة',
                             value: settings.vibrationClickCounter,
                             onChanged: (String? value) {
@@ -504,7 +504,7 @@ class _SettingsState extends State<Settings>
                             }),
                         const VerticalSpace(),
                         segmentedControlOption(
-                          icon: AlmuslimIcons.done,
+                          icon: JanatyIcons.done,
                           title: 'عند مضاعفات المئة',
                           value: settings.vibrationHunderds,
                           onChanged: (String? value) {
@@ -534,7 +534,7 @@ class _SettingsState extends State<Settings>
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       subtitleWithIcon(
-                          'التنبيه لأذكار الصباح', AlmuslimIcons.morning),
+                          'التنبيه لأذكار الصباح', JanatyIcons.morning),
                       morningNotiEnabled
                           ? SizedBox(
                               width: 100,
@@ -733,7 +733,7 @@ class _SettingsState extends State<Settings>
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       subtitleWithIcon(
-                          'التنبيه لأذكار المساء', AlmuslimIcons.night),
+                          'التنبيه لأذكار المساء', JanatyIcons.night),
                       nightNotiEnabled
                           ? SizedBox(
                               width: 100,
@@ -935,7 +935,7 @@ class _SettingsState extends State<Settings>
                   ),
                   const Divider(),
                   switcherOption(
-                    icon: AlmuslimIcons.notifications,
+                    icon: JanatyIcons.notifications,
                     title: 'إشعارات عامة',
                     value: settings.generalNotification,
                     onChanged: (bool value) {
@@ -951,19 +951,19 @@ class _SettingsState extends State<Settings>
                   title('المظهر'),
                   const Divider(),
                   radioBtn(
-                    AlmuslimIcons.lightMode,
+                    JanatyIcons.lightMode,
                     'الوضع النهاري',
                     'light_theme',
                   ),
                   const Divider(),
                   radioBtn(
-                    AlmuslimIcons.darkMode,
+                    JanatyIcons.darkMode,
                     'الوضع الليلي',
                     'dark_theme',
                   ),
                   const Divider(),
                   radioBtn(
-                    AlmuslimIcons.systemMode,
+                    JanatyIcons.systemMode,
                     'وضع النظام',
                     'system_theme',
                   ),
@@ -977,7 +977,7 @@ class _SettingsState extends State<Settings>
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       width: MediaQuery.of(context).size.width,
                       child: subtitleWithIcon(
-                          'قسم أسماء الله الحُسنى', AlmuslimIcons.allahNames),
+                          'قسم أسماء الله الحُسنى', JanatyIcons.allahNames),
                     ),
                   ),
                   const Divider(),
@@ -985,7 +985,7 @@ class _SettingsState extends State<Settings>
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     width: MediaQuery.of(context).size.width,
                     child: subtitleWithIcon(
-                        'قسم الرقية الشرعية، كُتيب أَوراد', AlmuslimIcons.ruqiya),
+                        'قسم الرقية الشرعية، كُتيب أَوراد', JanatyIcons.ruqiya),
                   ),
                   const Divider(),
                   const SizedBox(height: 10.0),
@@ -996,7 +996,7 @@ class _SettingsState extends State<Settings>
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       width: MediaQuery.of(context).size.width,
-                      child: subtitleWithIcon('تقييم التطبيق', AlmuslimIcons.star),
+                      child: subtitleWithIcon('تقييم التطبيق', JanatyIcons.star),
                     ),
                   ),
                   const Divider(),
@@ -1005,7 +1005,7 @@ class _SettingsState extends State<Settings>
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       width: MediaQuery.of(context).size.width,
-                      child: subtitleWithIcon('نشر التطبيق', AlmuslimIcons.share),
+                      child: subtitleWithIcon('نشر التطبيق', JanatyIcons.share),
                     ),
                   ),
                   const Divider(),
@@ -1014,7 +1014,7 @@ class _SettingsState extends State<Settings>
                     child: Container(
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       width: MediaQuery.of(context).size.width,
-                      child: subtitleWithIcon('تواصل معنا', AlmuslimIcons.mail),
+                      child: subtitleWithIcon('تواصل معنا', JanatyIcons.mail),
                     ),
                   ),
                   const Divider(),
@@ -1024,7 +1024,7 @@ class _SettingsState extends State<Settings>
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        subtitleWithIcon('شبكات التواصل', AlmuslimIcons.follow),
+                        subtitleWithIcon('شبكات التواصل', JanatyIcons.follow),
                         Row(
                           children: <Widget>[
                             GestureDetector(

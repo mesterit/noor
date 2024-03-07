@@ -21,14 +21,14 @@ backToExactLocation(dynamic item, BuildContext context) async {
   final int index = tmpList.indexOf(item);
 
   switch (item.category) {
-    case AlmuslimCategory.athkar:
+    case JanatyCategory.athkar:
       Navigator.of(context).push(
         MaterialPageRoute<AthkarList>(
           builder: (_) => AthkarList(index: index),
         ),
       );
       break;
-    case AlmuslimCategory.myad3yah:
+    case JanatyCategory.myad3yah:
       final int index =
           tmpList.indexWhere((dynamic element) => element == item);
 
@@ -38,7 +38,7 @@ backToExactLocation(dynamic item, BuildContext context) async {
         ),
       );
       break;
-    case AlmuslimCategory.allahname:
+    case JanatyCategory.allahname:
       Navigator.of(context).push(
         MaterialPageRoute<AllahNamesList>(
           builder: (_) => AllahNamesList(

@@ -1,4 +1,4 @@
-# [Janaty App | تطبيق نُور](https://Almuslimathkar.com)
+# [Janaty App | تطبيق نُور](https://Janatyathkar.com)
 
 [![Codemagic build status](https://api.codemagic.io/apps/6208f023546bd24402e57b64/6208f023546bd24402e57b63/status_badge.svg)](https://codemagic.io/apps/6208f023546bd24402e57b64/6208f023546bd24402e57b63/latest_build)
 
@@ -33,9 +33,9 @@ It's important to put your own Firebase service file in order to run the app, as
 1. Create a [new Firebase project](https://console.firebase.google.com/).
 2. Add a new Android or iOS app, depending on which device you want to use, and follow the configuration steps to connect Janaty to your Firebase project.
 3. Go to Remote Config page.
-4. Add a new parameter with name `AlmuslimThker`, with any value of your choice.
+4. Add a new parameter with name `JanatyThker`, with any value of your choice.
 5. Go to Cloud Messaging page, and enable it for your project.
-6. To setup the cloud function that trigger a notification each time the Remote Config variable changes on the console, find the code in [this repo](https://github.com/Maryom/Almuslim_RemoteConfig).
+6. To setup the cloud function that trigger a notification each time the Remote Config variable changes on the console, find the code in [this repo](https://github.com/Maryom/Janaty_RemoteConfig).
 
 ### 2. Run
 
@@ -62,7 +62,7 @@ flutter run
 If you encounter any bug while using the apps in store, or running it locally, please file an issue.
 <br /> Contribution for enhancments are also welcome! just create a PR, and describe precisly what is your contribution.
 
-For features request, contact us on [Almuslimathkarapplication@gmail.com](mailto:Almuslimathkarapplication@gmail.com?subject=%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%AD&body=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C)
+For features request, contact us on [Janatyathkarapplication@gmail.com](mailto:Janatyathkarapplication@gmail.com?subject=%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%AD&body=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C)
 
 ## Credits
 Shout out to the amazing designer [Shaikha Alqahtani](https://twitter.com/Ishaiookh).

@@ -1,4 +1,4 @@
-import 'package:Janaty/exports/constants.dart' show AlmuslimCategory;
+import 'package:Janaty/exports/constants.dart' show JanatyCategory;
 
 class Doaa {
   late final String id;
@@ -9,7 +9,7 @@ class Doaa {
 
   late final String sectionName;
 
-  late final AlmuslimCategory? category;
+  late final JanatyCategory? category;
 
   Doaa._(
     this.id,

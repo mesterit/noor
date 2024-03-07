@@ -1,6 +1,6 @@
 import 'package:Janaty/env_config.dart';
 
-class AlmuslimIcons {
+class JanatyIcons {
   static String home = 'assets/icons/bottom-nav/${prefix}home.svg';
   static String fav = 'assets/icons/bottom-nav/${prefix}fav.svg';
   static String subha = 'assets/icons/bottom-nav/${prefix}subha.svg';

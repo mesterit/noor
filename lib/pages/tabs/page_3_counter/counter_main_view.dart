@@ -88,12 +88,12 @@ class _CounterViewState extends State<CounterView> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      AlmuslimIconButton(
-                        icon: AlmuslimIcons.subhaList,
+                      JanatyIconButton(
+                        icon: JanatyIcons.subhaList,
                         onPressed: navigateToCounterList,
                       ),
-                      AlmuslimIconButton(
-                        icon: AlmuslimIcons.subhaReset,
+                      JanatyIconButton(
+                        icon: JanatyIcons.subhaReset,
                         onPressed: counterModel.resetSelectedItemCounter,
                       )
                     ],
@@ -150,8 +150,8 @@ class _CounterViewState extends State<CounterView> {
   }
 }
 
-class AlmuslimIconButton extends StatelessWidget {
-  const AlmuslimIconButton({
+class JanatyIconButton extends StatelessWidget {
+  const JanatyIconButton({
     Key? key,
     this.onPressed,
     this.color = Colors.white,

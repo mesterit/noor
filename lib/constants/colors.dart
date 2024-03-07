@@ -1,20 +1,20 @@
-class AlmuslimColors {
+class JanatyColors {
   static LightModeColors get light => LightModeColors();
   static DarkModeColors get dark => DarkModeColors();
 
-  final int primary = 0xff6db7e5;
+  final int primary = 0xff0a2247;
   final int subhaListItemBg = 0;
   final int subhaLockBg = 0;
 }
 
-class DarkModeColors extends AlmuslimColors {
+class DarkModeColors extends JanatyColors {
   @override
-  int get subhaListItemBg => 0xff1D274C;
+  int get subhaListItemBg => 0xffffc300;
   @override
-  int get subhaLockBg => 0xff375089;
+  int get subhaLockBg => 0xff0a1b35;
 }
 
-class LightModeColors extends AlmuslimColors {
+class LightModeColors extends JanatyColors {
   @override
   int get subhaListItemBg => 0xffffffff;
   @override

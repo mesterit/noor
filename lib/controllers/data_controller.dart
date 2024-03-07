@@ -44,9 +44,9 @@ class DataController {
     if (dataModel.quraan.isEmpty) {
       dataModel.quraan = data[1]
           .map((dynamic e) {
-            e['category'] = AlmuslimCategory.quraan;
+            e['category'] = JanatyCategory.quraan;
             e['ribbon'] = Ribbon.ribbon2;
-            e['sectionName'] = categoryTitle[AlmuslimCategory.quraan];
+            e['sectionName'] = categoryTitle[JanatyCategory.quraan];
 
             return Doaa.fromMap(e);
           })
@@ -56,9 +56,9 @@ class DataController {
     if (dataModel.sunnah.isEmpty) {
       dataModel.sunnah = data[2]
           .map((dynamic e) {
-            e['category'] = AlmuslimCategory.sunnah;
+            e['category'] = JanatyCategory.sunnah;
             e['ribbon'] = Ribbon.ribbon3;
-            e['sectionName'] = categoryTitle[AlmuslimCategory.sunnah];
+            e['sectionName'] = categoryTitle[JanatyCategory.sunnah];
 
             return Doaa.fromMap(e);
           })
@@ -69,8 +69,8 @@ class DataController {
       dataModel.ruqiya = data[3]
           .map((dynamic e) {
             e['ribbon'] = Ribbon.ribbon4;
-            e['category'] = AlmuslimCategory.ruqiya;
-            e['sectionName'] = categoryTitle[AlmuslimCategory.ruqiya];
+            e['category'] = JanatyCategory.ruqiya;
+            e['sectionName'] = categoryTitle[JanatyCategory.ruqiya];
 
             return Doaa.fromMap(e);
           })
@@ -178,7 +178,7 @@ class DataController {
     // Update underlying fav prefs list for persistency
     SharedPrefsService.putStringList('fav', favPrefs);
 
-    if (element.category == AlmuslimCategory.myad3yah) {
+    if (element.category == JanatyCategory.myad3yah) {
       await DBService.db.update(element);
     }
 
@@ -195,7 +195,7 @@ class DataController {
     // Update underlying fav prefs list for persistency
     SharedPrefsService.putStringList('fav', favPrefs);
 
-    if (element.category == AlmuslimCategory.myad3yah) {
+    if (element.category == JanatyCategory.myad3yah) {
       await DBService.db.update(element);
     }
 

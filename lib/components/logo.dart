@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:Janaty/exports/controllers.dart' show ThemeModel;
 import 'package:provider/provider.dart';
 
-class AlmuslimLogo extends StatelessWidget {
-  const   AlmuslimLogo({Key? key, required this.size}) : super(key: key);
+class JanatyLogo extends StatelessWidget {
+  const   JanatyLogo({Key? key, required this.size}) : super(key: key);
   final double size;
 
   @override

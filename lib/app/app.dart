@@ -11,8 +11,8 @@ import 'package:Janaty/exports/controllers.dart' show ThemeModel;
 import 'package:Janaty/exports/constants.dart' show lightTheme, darkTheme;
 import 'package:Janaty/pages/tabs/page_3_counter/counter_view_model.dart';
 
-class AlmuslimApp extends StatelessWidget {
-  const AlmuslimApp({Key? key}) : super(key: key);
+class JanatyApp extends StatelessWidget {
+  const JanatyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

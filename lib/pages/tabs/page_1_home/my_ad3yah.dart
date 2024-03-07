@@ -11,7 +11,7 @@ import 'package:Janaty/exports/models.dart' show DataModel, Doaa;
 import 'package:Janaty/exports/components.dart'
     show
         CardTemplate,
-        AlmuslimCloseButton,
+        JanatyCloseButton,
         DeleteConfirmationDialog,
         ImageButton,
         CardText,
@@ -126,7 +126,7 @@ class _MyAd3yahState extends State<MyAd3yah> with TickerProviderStateMixin {
                           fontSize: 20,
                         ),
                       ),
-                      const AlmuslimCloseButton(size: 35)
+                      const JanatyCloseButton(size: 35)
                     ],
                   ),
                 ),

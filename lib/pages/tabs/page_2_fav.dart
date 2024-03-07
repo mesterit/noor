@@ -7,7 +7,7 @@ import 'package:reorderables/reorderables.dart';
 import 'package:Janaty/exports/components.dart'
     show CardTemplate, DeleteConfirmationDialog, ImageButton;
 import 'package:Janaty/exports/models.dart' show AllahName;
-import 'package:Janaty/exports/constants.dart' show Images, AlmuslimCategory;
+import 'package:Janaty/exports/constants.dart' show Images, JanatyCategory;
 import 'package:Janaty/exports/pages.dart'
     show Ad3yahList, AllahNamesList, AthkarList, MyAd3yah;
 import 'package:Janaty/exports/controllers.dart' show DataController, ThemeModel;
@@ -93,21 +93,21 @@ class _FavoriteState extends State<Favorite>
     final int index = tmpList.indexWhere(
         (dynamic element) => element.sectionName == item.sectionName);
     switch (item.category) {
-      case AlmuslimCategory.athkar:
+      case JanatyCategory.athkar:
         Navigator.of(context).push(
           MaterialPageRoute<AthkarList>(
             builder: (_) => AthkarList(index: index),
           ),
         );
         break;
-      case AlmuslimCategory.myad3yah:
+      case JanatyCategory.myad3yah:
         Navigator.of(context).push(
           MaterialPageRoute<MyAd3yah>(
             builder: (_) => const MyAd3yah(),
           ),
         );
         break;
-      case AlmuslimCategory.allahname:
+      case JanatyCategory.allahname:
         Navigator.of(context).push(
           MaterialPageRoute<AllahNamesList>(
             builder: (_) => const AllahNamesList(),
@@ -318,7 +318,7 @@ class FavCard extends StatelessWidget {
           onTap: remove,
         ),
       ],
-      additionalContent: item.category == AlmuslimCategory.myad3yah
+      additionalContent: item.category == JanatyCategory.myad3yah
           ? CardText(
               text: item.info,
               color: Theme.of(context).primaryColor,

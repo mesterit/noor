@@ -80,7 +80,7 @@ class _CounterListViewState extends State<CounterListView> {
         counterModel.deleteSubhaItem(item);
       }
     } else if (item.locked) {
-      AlmuslimAlertDialog.of(context).show(
+      JanatyAlertDialog.of(context).show(
         title: 'عُــذراً',
         content: 'لا يمكن حذف الأذكار المُقترحة',
       );
@@ -143,12 +143,12 @@ class _CounterListViewState extends State<CounterListView> {
             AnimatedSwitcher(
               duration: const Duration(milliseconds: 200),
               child: isEditMode
-                  ? AlmuslimIconButton(
+                  ? JanatyIconButton(
                       key: ValueKey<bool>(isEditMode),
                       icon: context.read<ThemeModel>().images.addMyAd3yah,
                       onPressed: addDialog,
                     )
-                  : AlmuslimIconButton(
+                  : JanatyIconButton(
                       key: ValueKey<bool>(isEditMode),
                       icon: Images.editeIcon,
                       onPressed: () {
@@ -165,7 +165,7 @@ class _CounterListViewState extends State<CounterListView> {
                   .headline2!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
-            AlmuslimIconButton(
+            JanatyIconButton(
               icon: Icons.close_rounded,
               onPressed: () {
                 if (isEditMode) {
@@ -286,7 +286,7 @@ class SubhaListItem extends StatelessWidget {
                               child: isEditMode
                                   ? item.locked
                                       ? SvgPicture.asset(
-                                          AlmuslimIcons.subhaLock,
+                                          JanatyIcons.subhaLock,
                                           width: 40,
                                         )
                                       : Image.asset(

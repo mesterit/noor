@@ -25,7 +25,7 @@ class DBService with ChangeNotifier {
 
   initDB() async {
     Directory documentsDirectory = await getApplicationDocumentsDirectory();
-    String path = join(documentsDirectory.path, 'AlmuslimDB.db');
+    String path = join(documentsDirectory.path, 'JanatyDB.db');
     return await openDatabase(
       path,
       version: 2,
@@ -80,7 +80,7 @@ class DBService with ChangeNotifier {
                 'text': e['text'],
                 'info': e['info'],
                 'ribbon': Ribbon.ribbon5,
-                'category': AlmuslimCategory.myad3yah,
+                'category': JanatyCategory.myad3yah,
                 'sectionName': 'أدعيتي',
                 'isFav': e['isFav'] == 1 ? true : false,
               };

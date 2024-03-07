@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'dialog_button.dart';
 
-class AlmuslimAlertDialog extends StatelessWidget {
-  const AlmuslimAlertDialog(
+class JanatyAlertDialog extends StatelessWidget {
+  const JanatyAlertDialog(
     this.context, {
     Key? key,
     this.title = '',
@@ -13,8 +13,8 @@ class AlmuslimAlertDialog extends StatelessWidget {
   final String content;
   final BuildContext context;
 
-  static AlmuslimAlertDialog of(BuildContext context) {
-    return AlmuslimAlertDialog(context);
+  static JanatyAlertDialog of(BuildContext context) {
+    return JanatyAlertDialog(context);
   }
 
   Future<bool?> show({
@@ -32,7 +32,7 @@ class AlmuslimAlertDialog extends StatelessWidget {
             Curves.easeInOutBack.transform(a1.value) - 1.0;
         return Transform(
           transform: Matrix4.translationValues(0.0, curvedValue * 800, 0.0),
-          child: AlmuslimAlertDialog(
+          child: JanatyAlertDialog(
             context,
             title: title,
             content: content,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:Janaty/exports/pages.dart' show RootHome;
-import 'package:Janaty/exports/components.dart' show AlmuslimLogo;
+import 'package:Janaty/exports/components.dart' show JanatyLogo;
 import 'package:Janaty/models/theme.dart';
 import 'package:provider/provider.dart';
 
@@ -49,17 +49,28 @@ class _SplashScreenState extends State<SplashScreen> {
         child: AnimatedOpacity(
           duration: const Duration(milliseconds: 200),
           opacity: logoOpacity,
-          child:const Text(
+          child:
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Image.asset(
+                width: 200,
+                "assets/images/logo-white.png",
+                fit: BoxFit.cover,
+
+                gaplessPlayback: true,
+              ),
+          Text(
             "جَنَّتِي",
             key: ValueKey<String>("جَنَّتِي"),
             textAlign: TextAlign.center,
             style:  TextStyle(
               color: Colors.white,
-              fontSize: 28,
+              fontSize: 40,
               height: 3.5,
               fontWeight: FontWeight.bold
             ),
-          ),
+          ),])
         ),
       ),
     );

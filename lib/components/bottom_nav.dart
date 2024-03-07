@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:Janaty/exports/constants.dart' show AlmuslimIcons;
+import 'package:Janaty/exports/constants.dart' show JanatyIcons;
 
 class BottomNav extends StatefulWidget {
   const BottomNav({
@@ -36,7 +36,7 @@ class _BottomNavState extends State<BottomNav> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: BottomItem(
-              icon: AlmuslimIcons.home,
+              icon: JanatyIcons.home,
               text: 'نُور',
               currentIndex: currentIndex,
               index: 0,
@@ -45,7 +45,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
           BottomNavigationBarItem(
             icon: BottomItem(
-              icon: AlmuslimIcons.fav,
+              icon: JanatyIcons.fav,
               text: 'المفضلة',
               currentIndex: currentIndex,
               index: 1,
@@ -54,7 +54,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
           BottomNavigationBarItem(
             icon: BottomItem(
-              icon: AlmuslimIcons.subha,
+              icon: JanatyIcons.subha,
               text: 'السبحة',
               currentIndex: currentIndex,
               index: 2,
@@ -63,7 +63,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
           BottomNavigationBarItem(
             icon: BottomItem(
-              icon: AlmuslimIcons.settings,
+              icon: JanatyIcons.settings,
               text: 'الإعدادات',
               currentIndex: currentIndex,
               index: 3,

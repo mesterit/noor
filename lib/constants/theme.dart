@@ -10,7 +10,7 @@ ThemeData lightTheme() => ThemeData(
       appBarTheme:
           const AppBarTheme(systemOverlayStyle: SystemUiOverlayStyle.light),
       fontFamily: 'SST Arabic',
-      primaryColor: Color(AlmuslimColors.light.primary),
+      primaryColor: Color(JanatyColors.light.primary),
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: <TargetPlatform, PageTransitionsBuilder>{
           TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
@@ -110,16 +110,16 @@ ThemeData darkTheme() => ThemeData(
       appBarTheme:
           const AppBarTheme(systemOverlayStyle: SystemUiOverlayStyle.dark),
       fontFamily: 'SST Arabic',
-      primaryColor: Color(AlmuslimColors.dark.primary),
+      primaryColor: Color(JanatyColors.dark.primary),
       //selectedRowColor: const Color(0xff33477F),
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: <TargetPlatform, PageTransitionsBuilder>{
           TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
         },
       ),
-      canvasColor: const Color(0xff10122C),
+      canvasColor: const Color(0xff0a1b35),
       dividerColor: const Color(0xff3C387B),
-      iconTheme: const IconThemeData(color: Color(0xff3C387B), size: 30),
+      iconTheme: const IconThemeData(color: Color(0xffffffff), size: 30),
       unselectedWidgetColor: Colors.grey[300],
       inputDecorationTheme: const InputDecorationTheme(
         fillColor: Colors.white24,
@@ -191,9 +191,9 @@ ThemeData darkTheme() => ThemeData(
         ),
       ),
       splashColor: Colors.black.withOpacity(0.1),
-      highlightColor: const Color(0xff3C387B).withOpacity(0.5),
-      dialogTheme: const DialogTheme(backgroundColor: Color(0xff1B2349)),
-      cardColor: const Color(0xff10122C),
+      highlightColor: const Color(0xff0a2247).withOpacity(0.5),
+      dialogTheme: const DialogTheme(backgroundColor: Color(0xff0a2247)),
+      cardColor: const Color(0xff0a1b35),
       scrollbarTheme: ScrollbarThemeData(
         radius: const Radius.circular(5),
         thumbColor: MaterialStateProperty.all(

@@ -359,7 +359,7 @@ class _AnimatedHeaderState extends State<AnimatedHeader>
 
   Future<void> _loadRemoteConfig() async {
     remoteConfigNotifier.value =
-        await RemoteConfigService.instance.fetchAlmuslimRC();
+        await RemoteConfigService.instance.fetchJanatyRC();
   }
 
   Future<void> _setupReceivingFCM() async {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'package:Janaty/exports/pages.dart' show Ad3yahList, MyAd3yah;
-import 'package:Janaty/exports/constants.dart' show Titles, AlmuslimCategory;
+import 'package:Janaty/exports/constants.dart' show Titles, JanatyCategory;
 import 'package:Janaty/exports/components.dart' show CardSliverAppBar, ListItem;
 import 'package:Janaty/exports/controllers.dart' show ThemeModel;
 
@@ -31,22 +31,22 @@ class _Ad3yahState extends State<Ad3yah> with SingleTickerProviderStateMixin {
                 Ad3yahTitleCard(
                   title: Titles.quraan,
                   icon: theme.images.quraanTitleIcon,
-                  category: AlmuslimCategory.quraan,
+                  category: JanatyCategory.quraan,
                 ),
                 Ad3yahTitleCard(
                   title: Titles.sunnah,
                   icon: theme.images.sunnahTitleIcon,
-                  category: AlmuslimCategory.sunnah,
+                  category: JanatyCategory.sunnah,
                 ),
                 Ad3yahTitleCard(
                   title: Titles.ruqya,
                   icon: theme.images.ruqyaTitleIcon,
-                  category: AlmuslimCategory.ruqiya,
+                  category: JanatyCategory.ruqiya,
                 ),
                 Ad3yahTitleCard(
                   title: Titles.myAd3yah,
                   icon: theme.images.myAd3yahTitleIcon,
-                  category: AlmuslimCategory.myad3yah,
+                  category: JanatyCategory.myad3yah,
                 ),
               ],
             ),
@@ -67,7 +67,7 @@ class Ad3yahTitleCard extends StatelessWidget {
 
   final String icon;
   final String title;
-  final AlmuslimCategory category;
+  final JanatyCategory category;
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +75,7 @@ class Ad3yahTitleCard extends StatelessWidget {
       icon: icon,
       title: title,
       onTap: () {
-        if (category == AlmuslimCategory.myad3yah) {
+        if (category == JanatyCategory.myad3yah) {
           Navigator.of(context).push(
             MaterialPageRoute<MyAd3yah>(
               builder: (_) => const MyAd3yah(),

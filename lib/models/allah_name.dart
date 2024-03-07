@@ -1,4 +1,4 @@
-import 'package:Janaty/exports/constants.dart' show AlmuslimCategory, Ribbon;
+import 'package:Janaty/exports/constants.dart' show JanatyCategory, Ribbon;
 
 class AllahName {
   late final String id;
@@ -6,7 +6,7 @@ class AllahName {
   late final String text;
   final String sectionName = 'أسماء الله الحسنى';
   final String ribbon = Ribbon.ribbon6;
-  final AlmuslimCategory category = AlmuslimCategory.allahname;
+  final JanatyCategory category = JanatyCategory.allahname;
   late bool isFav;
   late final int section;
   late final bool inApp;

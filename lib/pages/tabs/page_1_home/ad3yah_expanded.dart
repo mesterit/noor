@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:Janaty/exports/components.dart'
-    show AlmuslimCloseButton, CardTemplate, FavAction, CardText, CopyAction;
+    show JanatyCloseButton, CardTemplate, FavAction, CardText, CopyAction;
 import 'package:Janaty/exports/models.dart' show Doaa, DataModel;
 
 class Ad3yahList extends StatefulWidget {
@@ -15,7 +15,7 @@ class Ad3yahList extends StatefulWidget {
     required this.category,
   }) : super(key: key);
   final int index;
-  final AlmuslimCategory category;
+  final JanatyCategory category;
   @override
   _Ad3yahListState createState() => _Ad3yahListState();
 }
@@ -58,7 +58,7 @@ class _Ad3yahListState extends State<Ad3yahList> {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headline1,
                   ),
-                  AlmuslimCloseButton(
+                  JanatyCloseButton(
                       color: Theme.of(context).colorScheme.secondary),
                 ],
               ),

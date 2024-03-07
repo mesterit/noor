@@ -1,4 +1,4 @@
-import 'package:Janaty/exports/constants.dart' show AlmuslimCategory, Ribbon;
+import 'package:Janaty/exports/constants.dart' show JanatyCategory, Ribbon;
 
 class Thekr {
   late final String id;
@@ -11,7 +11,7 @@ class Thekr {
 
   late final int counter;
 
-  final AlmuslimCategory category = AlmuslimCategory.athkar;
+  final JanatyCategory category = JanatyCategory.athkar;
   final String ribbon = Ribbon.ribbon1;
 
   Thekr._(

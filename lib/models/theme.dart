@@ -45,19 +45,19 @@ class ThemeModel with ChangeNotifier {
     }
   }
 
-  AlmuslimColors get colors {
+  JanatyColors get colors {
     switch (userTheme) {
       case 'dark_theme':
-        return AlmuslimColors.dark;
+        return JanatyColors.dark;
       case 'light_theme':
-        return AlmuslimColors.light;
+        return JanatyColors.light;
       default:
         {
           switch (brightness) {
             case Brightness.dark:
-              return AlmuslimColors.dark;
+              return JanatyColors.dark;
             default:
-              return AlmuslimColors.light;
+              return JanatyColors.light;
           }
         }
     }
