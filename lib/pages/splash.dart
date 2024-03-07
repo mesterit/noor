@@ -50,8 +50,8 @@ class _SplashScreenState extends State<SplashScreen> {
           duration: const Duration(milliseconds: 200),
           opacity: logoOpacity,
           child:const Text(
-            "المسلم",
-            key: ValueKey<String>("المسلم"),
+            "جنتي",
+            key: ValueKey<String>("جنتي"),
             textAlign: TextAlign.center,
             style:  TextStyle(
               color: Colors.white,
