@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:Almuslim/exports/services.dart' show SharedPrefsService;
-import 'package:Almuslim/exports/constants.dart' show DefaultSettings;
+import 'package:Janaty/exports/services.dart' show SharedPrefsService;
+import 'package:Janaty/exports/constants.dart' show DefaultSettings;
 
 class AppSettings with ChangeNotifier {
   /// Font Size, the scale factor by which the font size is multiplied

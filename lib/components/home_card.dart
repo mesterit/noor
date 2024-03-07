@@ -14,6 +14,7 @@ class HomeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(image);
     return OpenContainer<bool>(
       transitionType: ContainerTransitionType.fade,
       openBuilder: (BuildContext _, VoidCallback openContainer) {

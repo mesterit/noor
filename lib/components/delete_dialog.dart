@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Almuslim/constants/strings.dart';
+import 'package:Janaty/constants/strings.dart';
 
 import 'dialog_button.dart';
 

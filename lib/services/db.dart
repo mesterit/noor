@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:Almuslim/constants/categories.dart';
-import 'package:Almuslim/constants/ribbons.dart';
-import 'package:Almuslim/models/doaa.dart';
+import 'package:Janaty/constants/categories.dart';
+import 'package:Janaty/constants/ribbons.dart';
+import 'package:Janaty/models/doaa.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';

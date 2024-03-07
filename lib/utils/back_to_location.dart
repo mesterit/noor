@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:Almuslim/constants/categories.dart';
-import 'package:Almuslim/models/data.dart';
-import 'package:Almuslim/exports/pages.dart'
+import 'package:Janaty/constants/categories.dart';
+import 'package:Janaty/models/data.dart';
+import 'package:Janaty/exports/pages.dart'
     show AthkarList, MyAd3yah, AllahNamesList, Ad3yahList;
 import 'package:provider/provider.dart';
 

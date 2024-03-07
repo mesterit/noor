@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:Almuslim/exports/constants.dart' show Images;
+import 'package:Janaty/exports/constants.dart' show Images;
 
 class CopyAction extends StatelessWidget {
   const CopyAction(this.text, {Key? key}) : super(key: key);

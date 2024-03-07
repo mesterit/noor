@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-import 'package:Almuslim/app/app.dart';
-import 'package:Almuslim/exports/controllers.dart' show DataController;
-import 'package:Almuslim/exports/models.dart' show DataModel;
-import 'package:Almuslim/exports/services.dart'
+import 'package:Janaty/app/app.dart';
+import 'package:Janaty/exports/controllers.dart' show DataController;
+import 'package:Janaty/exports/models.dart' show DataModel;
+import 'package:Janaty/exports/services.dart'
     show DBService, SharedPrefsService, FCMService;
-import 'package:Almuslim/exports/models.dart' show AppSettings;
-import 'package:Almuslim/pages/tabs/page_3_counter/counter_view_model.dart';
+import 'package:Janaty/exports/models.dart' show AppSettings;
+import 'package:Janaty/pages/tabs/page_3_counter/counter_view_model.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

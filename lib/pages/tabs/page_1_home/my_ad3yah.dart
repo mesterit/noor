@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:Almuslim/components/dialog_button.dart';
+import 'package:Janaty/components/dialog_button.dart';
 import 'package:provider/provider.dart';
 import 'package:reorderables/reorderables.dart';
 
-import 'package:Almuslim/exports/controllers.dart' show ThemeModel, DataController;
-import 'package:Almuslim/exports/constants.dart'
+import 'package:Janaty/exports/controllers.dart' show ThemeModel, DataController;
+import 'package:Janaty/exports/constants.dart'
     show Images, Ribbon, Strings, viewPadding;
-import 'package:Almuslim/exports/models.dart' show DataModel, Doaa;
-import 'package:Almuslim/exports/components.dart'
+import 'package:Janaty/exports/models.dart' show DataModel, Doaa;
+import 'package:Janaty/exports/components.dart'
     show
         CardTemplate,
         AlmuslimCloseButton,

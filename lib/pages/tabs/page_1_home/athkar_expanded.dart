@@ -3,11 +3,11 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import 'package:Almuslim/exports/models.dart' show AthkarCounter, DataModel, Thekr;
-import 'package:Almuslim/exports/controllers.dart' show AppSettings;
-import 'package:Almuslim/exports/components.dart'
+import 'package:Janaty/exports/models.dart' show AthkarCounter, DataModel, Thekr;
+import 'package:Janaty/exports/controllers.dart' show AppSettings;
+import 'package:Janaty/exports/components.dart'
     show AlmuslimCloseButton, ThekrTitleCard, AthkarCard;
-import 'package:Almuslim/exports/constants.dart' show viewPadding;
+import 'package:Janaty/exports/constants.dart' show viewPadding;
 
 class AthkarList extends StatefulWidget {
   const AthkarList({Key? key, required this.index}) : super(key: key);

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:Almuslim/exports/models.dart' show AthkarCounter, Thekr;
-import 'package:Almuslim/exports/constants.dart' show Ribbon;
-import 'package:Almuslim/exports/components.dart'
+import 'package:Janaty/exports/models.dart' show AthkarCounter, Thekr;
+import 'package:Janaty/exports/constants.dart' show Ribbon;
+import 'package:Janaty/exports/components.dart'
     show CardTemplate, CardText, CopyAction, FavAction;
-import 'package:Almuslim/exports/utils.dart' show ToArabicNumbers;
-import 'package:Almuslim/exports/controllers.dart' show AppSettings;
+import 'package:Janaty/exports/utils.dart' show ToArabicNumbers;
+import 'package:Janaty/exports/controllers.dart' show AppSettings;
 
 class AthkarCard extends StatelessWidget {
   const AthkarCard({

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:Almuslim/components/add_dialog.dart';
-import 'package:Almuslim/components/alert_dialog.dart';
-import 'package:Almuslim/components/delete_dialog.dart';
-import 'package:Almuslim/exports/constants.dart';
-import 'package:Almuslim/exports/controllers.dart';
-import 'package:Almuslim/exports/pages.dart';
-import 'package:Almuslim/pages/tabs/page_3_counter/counter_view_model.dart';
+import 'package:Janaty/components/add_dialog.dart';
+import 'package:Janaty/components/alert_dialog.dart';
+import 'package:Janaty/components/delete_dialog.dart';
+import 'package:Janaty/exports/constants.dart';
+import 'package:Janaty/exports/controllers.dart';
+import 'package:Janaty/exports/pages.dart';
+import 'package:Janaty/pages/tabs/page_3_counter/counter_view_model.dart';
 import 'package:provider/provider.dart';
-import 'package:Almuslim/utils/to_arabic.dart';
+import 'package:Janaty/utils/to_arabic.dart';
 
 const kMaxLength = 75;
 
@@ -213,7 +213,7 @@ class SubhaListItem extends StatelessWidget {
         onTap: isEditMode ? null : () => onTap(item),
         borderRadius: BorderRadius.circular(8.0),
         splashColor: Colors.transparent,
-        highlightColor: Theme.of(context).selectedRowColor,
+        highlightColor: Color(0xff33477F),
         child: Container(
           constraints: const BoxConstraints(minHeight: 80),
           margin: const EdgeInsets.all(5.0),
@@ -225,7 +225,7 @@ class SubhaListItem extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 color: item.selected
-                    ? Theme.of(context).selectedRowColor
+                    ? Color(0xff33477F)
                     : Colors.transparent,
                 spreadRadius: 6,
               )

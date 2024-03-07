@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:Almuslim/components/adaptive_icon.dart';
-import 'package:Almuslim/models/data.dart';
-import 'package:Almuslim/services/fcm.dart';
+import 'package:Janaty/components/adaptive_icon.dart';
+import 'package:Janaty/models/data.dart';
+import 'package:Janaty/services/fcm.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -12,12 +12,12 @@ import 'package:intl/intl.dart' as intl;
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-import 'package:Almuslim/exports/components.dart' show CardTemplate, CardText;
-import 'package:Almuslim/exports/services.dart' show SharedPrefsService;
-import 'package:Almuslim/exports/controllers.dart' show ThemeModel, AppSettings;
-import 'package:Almuslim/exports/constants.dart'
+import 'package:Janaty/exports/components.dart' show CardTemplate, CardText;
+import 'package:Janaty/exports/services.dart' show SharedPrefsService;
+import 'package:Janaty/exports/controllers.dart' show ThemeModel, AppSettings;
+import 'package:Janaty/exports/constants.dart'
     show Images, Links, AlmuslimIcons, Strings;
-import 'package:Almuslim/exports/utils.dart' show ToArabicNumbers;
+import 'package:Janaty/exports/utils.dart' show ToArabicNumbers;
 
 class Settings extends StatefulWidget {
   const Settings({

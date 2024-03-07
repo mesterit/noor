@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:Almuslim/exports/pages.dart' show Ad3yahList, MyAd3yah;
-import 'package:Almuslim/exports/constants.dart' show Titles, AlmuslimCategory;
-import 'package:Almuslim/exports/components.dart' show CardSliverAppBar, ListItem;
-import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
+import 'package:Janaty/exports/pages.dart' show Ad3yahList, MyAd3yah;
+import 'package:Janaty/exports/constants.dart' show Titles, AlmuslimCategory;
+import 'package:Janaty/exports/components.dart' show CardSliverAppBar, ListItem;
+import 'package:Janaty/exports/controllers.dart' show ThemeModel;
 
 class Ad3yah extends StatefulWidget {
   const Ad3yah({Key? key}) : super(key: key);

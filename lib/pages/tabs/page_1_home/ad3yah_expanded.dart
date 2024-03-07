@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:Almuslim/constants/categories.dart';
-import 'package:Almuslim/constants/theme.dart';
+import 'package:Janaty/constants/categories.dart';
+import 'package:Janaty/constants/theme.dart';
 import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import 'package:Almuslim/exports/components.dart'
+import 'package:Janaty/exports/components.dart'
     show AlmuslimCloseButton, CardTemplate, FavAction, CardText, CopyAction;
-import 'package:Almuslim/exports/models.dart' show Doaa, DataModel;
+import 'package:Janaty/exports/models.dart' show Doaa, DataModel;
 
 class Ad3yahList extends StatefulWidget {
   const Ad3yahList({

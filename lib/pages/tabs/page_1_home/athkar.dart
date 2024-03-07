@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:Almuslim/components/card_sliver_app_bar.dart';
+import 'package:Janaty/components/card_sliver_app_bar.dart';
 import 'package:provider/provider.dart';
 
-import 'package:Almuslim/exports/services.dart' show DBService;
-import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
-import 'package:Almuslim/exports/constants.dart' show Images;
-import 'package:Almuslim/exports/models.dart' show DataModel, Thekr;
-import 'package:Almuslim/exports/pages.dart' show AthkarList;
-import 'package:Almuslim/exports/components.dart' show ListItem;
+import 'package:Janaty/exports/services.dart' show DBService;
+import 'package:Janaty/exports/controllers.dart' show ThemeModel;
+import 'package:Janaty/exports/constants.dart' show Images;
+import 'package:Janaty/exports/models.dart' show DataModel, Thekr;
+import 'package:Janaty/exports/pages.dart' show AthkarList;
+import 'package:Janaty/exports/components.dart' show ListItem;
 
 class AthkarPage extends StatefulWidget {
   const AthkarPage({Key? key}) : super(key: key);

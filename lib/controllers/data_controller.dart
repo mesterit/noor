@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:get_it/get_it.dart';
-import 'package:Almuslim/constants/categories.dart';
-import 'package:Almuslim/constants/ribbons.dart';
-import 'package:Almuslim/exports/models.dart'
+import 'package:Janaty/constants/categories.dart';
+import 'package:Janaty/constants/ribbons.dart';
+import 'package:Janaty/exports/models.dart'
     show DataModel, Doaa, Thekr, AllahName;
-import 'package:Almuslim/exports/services.dart'
+import 'package:Janaty/exports/services.dart'
     show DBService, SharedPrefsService, JsonService;
 
 class DataController {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:Almuslim/exports/pages.dart' show AllahNamesList;
-import 'package:Almuslim/exports/models.dart' show DataModel, AllahName;
-import 'package:Almuslim/exports/constants.dart' show Images;
-import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
-import 'package:Almuslim/exports/components.dart' show CardSliverAppBar, ListItem;
+import 'package:Janaty/exports/pages.dart' show AllahNamesList;
+import 'package:Janaty/exports/models.dart' show DataModel, AllahName;
+import 'package:Janaty/exports/constants.dart' show Images;
+import 'package:Janaty/exports/controllers.dart' show ThemeModel;
+import 'package:Janaty/exports/components.dart' show CardSliverAppBar, ListItem;
 
 class AllahNames extends StatefulWidget {
   const AllahNames({Key? key}) : super(key: key);

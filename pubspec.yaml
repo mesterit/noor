@@ -1,9 +1,9 @@
-name: Almuslim
-description: AlMuslim App
+name: Janaty
+description: Janaty App
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <3.2.7'
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   animations: ^2.0.2

@@ -1,4 +1,4 @@
-import 'package:Almuslim/env_config.dart';
+import 'package:Janaty/env_config.dart';
 
 class AlmuslimIcons {
   static String home = 'assets/icons/bottom-nav/${prefix}home.svg';

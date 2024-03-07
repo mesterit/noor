@@ -1,4 +1,4 @@
-import 'package:Almuslim/exports/constants.dart' show AlmuslimCategory;
+import 'package:Janaty/exports/constants.dart' show AlmuslimCategory;
 
 class Doaa {
   late final String id;

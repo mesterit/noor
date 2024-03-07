@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:Almuslim/exports/constants.dart' show AlmuslimIcons;
+import 'package:Janaty/exports/constants.dart' show AlmuslimIcons;
 
 class BottomNav extends StatefulWidget {
   const BottomNav({

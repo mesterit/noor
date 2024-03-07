@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:Almuslim/exports/pages.dart' show RootHome;
-import 'package:Almuslim/exports/components.dart' show AlmuslimLogo;
-import 'package:Almuslim/models/theme.dart';
+import 'package:Janaty/exports/pages.dart' show RootHome;
+import 'package:Janaty/exports/components.dart' show AlmuslimLogo;
+import 'package:Janaty/models/theme.dart';
 import 'package:provider/provider.dart';
 
 class SplashScreen extends StatefulWidget {

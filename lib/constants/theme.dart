@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:Almuslim/constants/colors.dart';
+import 'package:Janaty/constants/colors.dart';
 
 const kContentFontSize = 16.0;
 const viewPadding = 20.0;
@@ -22,7 +22,7 @@ ThemeData lightTheme() => ThemeData(
       dialogTheme: const DialogTheme(backgroundColor: Colors.white),
       highlightColor: Colors.black.withOpacity(0.1),
       splashColor: Colors.black.withOpacity(0.1),
-      selectedRowColor: const Color(0xffB3B3FF),
+      //selectedRowColor: const Color(0xffB3B3FF),
       textTheme: TextTheme(
         bodyText1: const TextStyle(
           fontSize: 16,
@@ -111,7 +111,7 @@ ThemeData darkTheme() => ThemeData(
           const AppBarTheme(systemOverlayStyle: SystemUiOverlayStyle.dark),
       fontFamily: 'SST Arabic',
       primaryColor: Color(AlmuslimColors.dark.primary),
-      selectedRowColor: const Color(0xff33477F),
+      //selectedRowColor: const Color(0xff33477F),
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: <TargetPlatform, PageTransitionsBuilder>{
           TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),

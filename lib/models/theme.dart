@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:Almuslim/exports/constants.dart' show Images;
-import 'package:Almuslim/exports/services.dart' show SharedPrefsService;
+import 'package:Janaty/exports/constants.dart' show Images;
+import 'package:Janaty/exports/services.dart' show SharedPrefsService;
 
 import '../constants/colors.dart';
 

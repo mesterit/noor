@@ -3,8 +3,8 @@ import 'package:collection/collection.dart';
 
 import 'package:flutter/foundation.dart';
 
-import 'package:Almuslim/exports/services.dart' show SharedPrefsService;
-import 'package:Almuslim/services/json.dart';
+import 'package:Janaty/exports/services.dart' show SharedPrefsService;
+import 'package:Janaty/services/json.dart';
 
 class CounterViewModel extends ChangeNotifier {
   CounterViewModel._(this._subhaList, this._selectedItem);

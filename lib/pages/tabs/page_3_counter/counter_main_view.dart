@@ -3,12 +3,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
-import 'package:Almuslim/exports/constants.dart';
-import 'package:Almuslim/pages/tabs/page_3_counter/counter_view_model.dart';
-import 'package:Almuslim/pages/tabs/page_3_counter/counter_list_view.dart';
+import 'package:Janaty/exports/constants.dart';
+import 'package:Janaty/pages/tabs/page_3_counter/counter_view_model.dart';
+import 'package:Janaty/pages/tabs/page_3_counter/counter_list_view.dart';
 
-import 'package:Almuslim/exports/utils.dart' show ToArabicNumbers;
-import 'package:Almuslim/exports/controllers.dart' show AppSettings, ThemeModel;
+import 'package:Janaty/exports/utils.dart' show ToArabicNumbers;
+import 'package:Janaty/exports/controllers.dart' show AppSettings, ThemeModel;
 
 class CounterView extends StatefulWidget {
   const CounterView({Key? key}) : super(key: key);

@@ -1,4 +1,4 @@
-import 'package:Almuslim/exports/constants.dart' show AlmuslimCategory, Ribbon;
+import 'package:Janaty/exports/constants.dart' show AlmuslimCategory, Ribbon;
 
 class Thekr {
   late final String id;

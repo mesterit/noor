@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import 'package:Almuslim/exports/models.dart' show DataModel, AllahName;
-import 'package:Almuslim/exports/constants.dart' show Images, Ribbon;
-import 'package:Almuslim/exports/components.dart'
+import 'package:Janaty/exports/models.dart' show DataModel, AllahName;
+import 'package:Janaty/exports/constants.dart' show Images, Ribbon;
+import 'package:Janaty/exports/components.dart'
     show
         AlmuslimCloseButton,
         CardTemplate,

@@ -1,4 +1,4 @@
-import 'package:Almuslim/env_config.dart';
+import 'package:Janaty/env_config.dart';
 
 abstract class Images {
   static LightAppImages get light => LightAppImages();
@@ -12,7 +12,7 @@ abstract class Images {
   final String myAd3yahTitleIcon = '';
   final String allahNamesTitleIcon = '';
   final String homeHeader = '';
-  final String athkarCard = '';
+  final String athkarCard = 'assets/images/home-cards/light/${prefix}Athkar.png';
   final String ad3yahCard = '';
   final String allahNamesCard = '';
   final String noAd3yah = '';
@@ -167,5 +167,5 @@ class DarkAppImages implements Images {
   String get addMyAd3yah => 'assets/icons/${prefix}addDo3aa.png';
 
   @override
-  String get subhaBg => 'assets/images/backgrounds/SubhaDarkBg.png';
+  String get subhaBg => 'assets/images/backgrounds/p_myAd3yahBg.png';
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:Almuslim/models/allah_name.dart';
+import 'package:Janaty/models/allah_name.dart';
 import 'package:provider/provider.dart';
 
-import 'package:Almuslim/exports/utils.dart' show Tashkeel;
-import 'package:Almuslim/exports/controllers.dart' show AppSettings;
+import 'package:Janaty/exports/utils.dart' show Tashkeel;
+import 'package:Janaty/exports/controllers.dart' show AppSettings;
 
 extension RegExpExtension on RegExp {
   List<String> allMatchesWithSep(String input, [int start = 0]) {

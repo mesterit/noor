@@ -1,7 +1,7 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get_it/get_it.dart';
-import 'package:Almuslim/models/settings.dart';
-import 'package:Almuslim/services/prefs.dart';
+import 'package:Janaty/models/settings.dart';
+import 'package:Janaty/services/prefs.dart';
 
 class FCMService {
   FCMService._();

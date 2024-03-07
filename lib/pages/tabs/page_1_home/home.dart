@@ -2,25 +2,25 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get_it/get_it.dart';
-import 'package:Almuslim/env_config.dart';
-import 'package:Almuslim/services/remote_config.dart';
+import 'package:Janaty/env_config.dart';
+import 'package:Janaty/services/remote_config.dart';
 
 import 'package:provider/provider.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
-import 'package:Almuslim/exports/constants.dart' show Images;
-import 'package:Almuslim/exports/pages.dart' show AllahNames, AthkarPage, Ad3yah;
-import 'package:Almuslim/exports/components.dart' show GlowingStars, HomeCard;
-import 'package:Almuslim/exports/utils.dart' show backToExactLocation, Tashkeel;
-import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
-import 'package:Almuslim/exports/services.dart' show SharedPrefsService;
-import 'package:Almuslim/exports/models.dart' show AllahName, DataModel;
+import 'package:Janaty/exports/constants.dart' show Images;
+import 'package:Janaty/exports/pages.dart' show AllahNames, AthkarPage, Ad3yah;
+import 'package:Janaty/exports/components.dart' show GlowingStars, HomeCard;
+import 'package:Janaty/exports/utils.dart' show backToExactLocation, Tashkeel;
+import 'package:Janaty/exports/controllers.dart' show ThemeModel;
+import 'package:Janaty/exports/services.dart' show SharedPrefsService;
+import 'package:Janaty/exports/models.dart' show AllahName, DataModel;
 
-export 'package:Almuslim/pages/tabs/page_1_home/ad3yah_expanded.dart';
-export 'package:Almuslim/pages/tabs/page_1_home/allah_names_expanded.dart';
-export 'package:Almuslim/pages/tabs/page_1_home/athkar_expanded.dart';
-export 'package:Almuslim/pages/tabs/page_1_home/my_ad3yah.dart';
+export 'package:Janaty/pages/tabs/page_1_home/ad3yah_expanded.dart';
+export 'package:Janaty/pages/tabs/page_1_home/allah_names_expanded.dart';
+export 'package:Janaty/pages/tabs/page_1_home/athkar_expanded.dart';
+export 'package:Janaty/pages/tabs/page_1_home/my_ad3yah.dart';
 
 class Home extends StatefulWidget {
   const Home({
@@ -168,6 +168,12 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin {
                           if (!isWriting)
                             Column(
                               children: <Widget>[
+                               ///Todo Add Quran Card
+                                // HomeCard(
+                                //   page: const AthkarPage(),
+                                //   image: images.athkarCard,
+                                //   tag: 'quran',
+                                // ),
                                 HomeCard(
                                   page: const AthkarPage(),
                                   image: images.athkarCard,
@@ -252,7 +258,7 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin {
               const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
           hintText: 'ابحث عن ذكر أو دعاء',
           hintStyle: const TextStyle(
-            color: Colors.grey,
+            color: Colors.white,
             fontWeight: FontWeight.normal,
           ),
           prefixIcon: Icon(

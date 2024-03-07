@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:Almuslim/exports/controllers.dart' show ThemeModel;
+import 'package:Janaty/exports/controllers.dart' show ThemeModel;
 import 'package:provider/provider.dart';
 
 class AlmuslimLogo extends StatelessWidget {

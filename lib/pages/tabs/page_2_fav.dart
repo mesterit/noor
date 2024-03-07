@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:Almuslim/models/data.dart';
+import 'package:Janaty/models/data.dart';
 import 'package:provider/provider.dart';
 import 'package:reorderables/reorderables.dart';
 
-import 'package:Almuslim/exports/components.dart'
+import 'package:Janaty/exports/components.dart'
     show CardTemplate, DeleteConfirmationDialog, ImageButton;
-import 'package:Almuslim/exports/models.dart' show AllahName;
-import 'package:Almuslim/exports/constants.dart' show Images, AlmuslimCategory;
-import 'package:Almuslim/exports/pages.dart'
+import 'package:Janaty/exports/models.dart' show AllahName;
+import 'package:Janaty/exports/constants.dart' show Images, AlmuslimCategory;
+import 'package:Janaty/exports/pages.dart'
     show Ad3yahList, AllahNamesList, AthkarList, MyAd3yah;
-import 'package:Almuslim/exports/controllers.dart' show DataController, ThemeModel;
-import 'package:Almuslim/exports/utils.dart' show backToExactLocation;
-import 'package:Almuslim/exports/components.dart' show CardText;
+import 'package:Janaty/exports/controllers.dart' show DataController, ThemeModel;
+import 'package:Janaty/exports/utils.dart' show backToExactLocation;
+import 'package:Janaty/exports/components.dart' show CardText;
 
 class Favorite extends StatefulWidget {
   const Favorite({
