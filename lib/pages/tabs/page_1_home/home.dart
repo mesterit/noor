@@ -10,7 +10,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 import 'package:Janaty/exports/constants.dart' show Images;
-import 'package:Janaty/exports/pages.dart' show AllahNames, AthkarPage, Ad3yah;
+import 'package:Janaty/exports/pages.dart' show AllahNames, AthkarPage, Ad3yah,Quran;
 import 'package:Janaty/exports/components.dart' show GlowingStars, HomeCard;
 import 'package:Janaty/exports/utils.dart' show backToExactLocation, Tashkeel;
 import 'package:Janaty/exports/controllers.dart' show ThemeModel;
@@ -169,11 +169,11 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin {
                             Column(
                               children: <Widget>[
                                ///Todo Add Quran Card
-                                // HomeCard(
-                                //   page: const AthkarPage(),
-                                //   image: images.athkarCard,
-                                //   tag: 'quran',
-                                // ),
+                                HomeCard(
+                                  page:  Quran(),
+                                  image: images.athkarCard,
+                                  tag: 'quran',
+                                ),
                                 HomeCard(
                                   page: const AthkarPage(),
                                   image: images.athkarCard,

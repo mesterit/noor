@@ -14,6 +14,9 @@ dependencies:
     sdk: flutter
   flutter_datetime_picker: ^1.5.1
   flutter_local_notifications: ^16.3.3
+  pdfx: ^2.6.0
+  device_info_plus: ^9.1.2
+  #win32: ^4.0.0
   flutter_localizations:
     sdk: flutter
   flutter_svg: ^2.0.9
@@ -24,7 +27,9 @@ dependencies:
   reorderables: ^0.6.0
   scrollable_positioned_list: ^0.3.8
   share_plus: ^7.2.2
-  shared_preferences: ^2.0.5
+  shared_preferences: ^2.2.2
+  fluttertoast: ^8.2.4
+  #screen: ^0.0.5
   sqflite: ^2.0.0+3
   url_launcher: ^6.0.3
 
@@ -64,7 +69,8 @@ flutter:
 
     # Data files
     - assets/json/
-
+    - assets/pdf/
+    - assets/images/
   fonts:
     - family: SST Arabic
       fonts:

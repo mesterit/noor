@@ -55,7 +55,7 @@ class MaterialAppWithTheme extends StatelessWidget {
       ],
       locale: const Locale('ar'),
       debugShowCheckedModeBanner: false,
-      title: 'نُور',
+      title: 'جَنَّتِي',
       themeMode: themeProvider.theme,
       theme: lightTheme(),
       darkTheme: darkTheme(),

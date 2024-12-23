@@ -2,7 +2,7 @@ class JanatyColors {
   static LightModeColors get light => LightModeColors();
   static DarkModeColors get dark => DarkModeColors();
 
-  final int primary = 0xff0a2247;
+  final int primary = 0xff8bc34a;
   final int subhaListItemBg = 0;
   final int subhaLockBg = 0;
 }

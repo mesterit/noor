@@ -118,7 +118,7 @@ class LightAppImages implements Images {
   String get addMyAd3yah => 'assets/icons/${prefix}addDo3aa.png';
 
   @override
-  String get subhaBg => 'assets/images/backgrounds/SubhaLightBg.png';
+  String get subhaBg => 'assets/images/backgrounds/p_myAd3yahBg.png';
 }
 
 class DarkAppImages implements Images {

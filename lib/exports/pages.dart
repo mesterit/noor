@@ -4,6 +4,7 @@ export 'package:Janaty/pages/splash.dart';
 export 'package:Janaty/pages/tabs/page_1_home/home.dart';
 
 export 'package:Janaty/pages/tabs/page_1_home/athkar.dart';
+export 'package:Janaty/pages/tabs/page_1_home/quran.dart';
 export 'package:Janaty/pages/tabs/page_1_home/athkar_expanded.dart';
 
 export 'package:Janaty/pages/tabs/page_1_home/ad3yah.dart';
