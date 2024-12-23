@@ -1,0 +1,52 @@
+name: flux_firebase
+description: A Firebase package for FluxStore apps
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+#  fstore:
+#    path: ../../
+  inspireui: 1.7.1
+
+  # FIREBASE PACKAGES
+  firebase_core: 2.24.2
+  firebase_analytics: 10.7.1
+  firebase_auth: 4.14.1
+  firebase_remote_config: 4.3.5
+  firebase_dynamic_links: 5.4.5
+  cloud_firestore: 4.13.2
+
+  # Additional Firebase packages. To prevent unexpected upgrade.
+  firebase_core_platform_interface: 5.0.0
+  firebase_analytics_platform_interface: 3.8.1
+  firebase_auth_platform_interface: 7.0.5
+  firebase_remote_config_platform_interface: 1.4.13
+  firebase_dynamic_links_platform_interface: 0.2.6+13
+  cloud_firestore_platform_interface: 6.0.6
+  firebase_messaging_platform_interface: 4.5.14
+
+  # To fix Google rejection. Will be removed after firebase_auth upgrade it
+  # https://github.com/invertase/react-native-firebase/issues/7561
+  recaptcha_enterprise_flutter: ^18.4.0
+
+  # PUSH NOTIFICATION
+  firebase_messaging: 14.7.5
+
+  # OTHERS
+  intl: ^0.18.0
+  timeago: 3.4.0
+  flutter_local_notifications: ^14.0.0+2
+  share: 2.0.4
+  provider: 6.0.5
+  collection: any
+  easy_debounce: 2.0.3
+
+flutter:
+  uses-material-design: true
+
